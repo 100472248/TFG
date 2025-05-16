@@ -87,8 +87,8 @@ FALLOS  = ["No se proporciona", "No se especifica en el texto", "No se especific
 
 WIKIPEDIA = "https://es.wikipedia.org/wiki/"
 WIKIS_DIR = "./wikis/"
-TXT_OUTPUT_PATH = "./dbs/resumen_final.txt"
-JSON_OUTPUT_PATH = "./dbs/resumen_final.json"
+TXT_OUTPUT_PATH = "./dbs/Gepeto/Gepeto_reviews.txt"
+JSON_OUTPUT_PATH = "./dbs/Gepeto/Gepeto_reviews.json"
 DEEPSEEK_URL = "http://0.0.0.0:11434/api/generate"
 MODEL_BASE = "deepseek-r1:14b"
 TURISMO_DIR = "./fuentes_turismo/"
