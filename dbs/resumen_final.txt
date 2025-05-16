@@ -32,71 +32,19 @@ Antequera:
 
 Aranjuez:
   País: España
----
-España
----
-España
   Comunidad autónoma: Comunidad de Madrid
----
-Comunidad de Madrid
----
-Comunidad de Madrid
   Provincia: Madrid
----
-Madrid
----
-Madrid
-  Número de habitantes: 62292
----
-Alrededor de 50
-  Servicios de transporte público: Trenes (cercanías línea 3 a 45 min de Madrid), autobuses interurbanos, Tren de la Fresa y alquiler de coches.
----
-Conexión ferroviaria con Madrid y otras ciudades cercanas.
----
-Tren (línea 3)
-  Limpieza: No se proporciona
----
-Sistemas regulares de recogida y tratamiento de residuos.
-  Actividades económicas: Turismo, agricultura frutal, ganadería y producción de arroz, trucha y vino.
----
-Agricultura (cultivo de hierbas aromáticas)
----
-Agricultura (espárragos trigueros
-  Estilo arquitectónico: Palacio Real de Aranjuez (Patrimonio Mundial de la UNESCO), Casa del Deán, Iglesia de San Juan Bautista, Puente de los Peces, Jardines Reales (uno de los jardines históricos más grandes de España).
----
-Barroco y neoclásico; Palacio Real de Aranjuez
----
-Ciudad Paisaje Cultural Patrimonio de la Humanidad
-  Importancia histórica: Fue un sitio real desde el siglo XV, destacándose durante la Guerra de Independencia española. Fue escenario del Motín de Aranjuez en 1808, que desembocó en la expulsión de los franceses y posteriormente en la independencia.
----
-Sede del motín que desencadenó la Revolución Española en 1808; mencionada en obras literarias y artísticas como 'El viaje a España' de Andersen.
----
-Fue declarada Real Sitio en 1560 por Felipe II
-  Nivel de turismo: Festivales, ferias, monumentos históricos y naturales. Destacan el Real Sitio de Aranjuez (Patrimonio de la Humanidad), palacios, jardines, museos, casas históricas, puentes y el festival de San Ildefonso.
----
-Jardines del Real Sitio
----
-Palacio Real
-  Nivel educativo: Escuela Nacional de Ciencias Agronómicas y UNiversidad Rey Juan Carlos (URJC).
----
-Centros educativos secundarios y superiores sin universidad específica mencionada.
----
-No disponible.
-  Calidad de vida: Buena calidad de vida con proximidad a Madrid y recursos naturales, culturales y de ocio
----
-Buena calidad de vida con accesos a servicios públicos y transporte.
----
-No disponible.
-  Medio ambiente: Áreas verdes como los Jardines Reales y el Parque Regional de la Cuenca del río Tajo, con nivel medioambiental bueno y baja contaminación.
----
-Zonas verdes importantes; no se menciona contaminación específica.
----
-Jardines y paisajes naturales protegidos; sin información específica sobre zonas verdes en Aranjuez o contaminación.
-  Seguridad: No se proporciona
----
-Servicios de seguridad localizados y medidas modernas.
----
-No disponible.
+  Número de habitantes: 62.292
+  Servicios de transporte público: Trenes de cercanías (línea C3 a 45 min de Madrid), autobuses interurbanos y turísticos como el Tren de la Fresa.
+  Limpieza: Cuenta con sistemas regulares para la recogida y tratamiento de residuos urbanos.
+  Actividades económicas: Principalmente turismo y agricultura (frutas, hortalizas, espárragos, arroz, vino), además de pequeña ganadería y pesca fluvial.
+  Estilo arquitectónico: Destaca por su patrimonio barroco y neoclásico: Palacio Real y Jardines Reales (Patrimonio Mundial UNESCO), Iglesia de San Antonio, y Puente de la Reina.
+  Importancia histórica: Declarado Real Sitio por Felipe II en 1560. Escenario del Motín de Aranjuez (1808), decisivo en la historia española.
+  Nivel de turismo: Alto; destaca por el Palacio Real, jardines históricos, festivales culturales y atractivos naturales del río Tajo.
+  Nivel educativo: Cuenta con la Universidad Rey Juan Carlos (Campus de Aranjuez) y la UNED.
+  Calidad de vida: Alta calidad de vida por su cercanía a Madrid, patrimonio cultural y natural, y servicios públicos adecuados.
+  Medio ambiente: Numerosas áreas verdes protegidas, especialmente los jardines del palacio a orillas del río Tajo, con baja contaminación.
+  Seguridad: Buenos servicios locales de seguridad pública y protección ciudadana.
 
 Barcelona:
   País: España
@@ -148,58 +96,19 @@ Burgos:
 
 Cartagena:
   País: España
----
-España
----
-España
   Comunidad autónoma: Región de Murcia
----
-Región de Murcia
----
-Región de Murcia
   Provincia: Murcia
----
-Murcia
----
-Murcia
-  Número de habitantes: 219777
----
-Aproximadamente 400
-  Servicios de transporte público: Cartagena cuenta con conexiones ferroviarias con ciudades como Madrid, Barcelona, Valencia y Alicante. Dispone de autobuses urbanos, interurbanos y servicios nacionales e internacionales (Alsa, Globalia, etc.). También tiene un puerto con transporte marítimo, tren turístico, y el aeropuerto más cercano está en Corvera.
----
-Buses urbanos y interurbanos
----
-Cuesta 5
-  Limpieza y gestión de residuos: 
-  Actividades económicas: Las principales actividades económicas son la agricultura (frutas, verduras, pesca), el turismo (con eventos como el Carnaval, Semana Santa y Carthagineses y Romanos), y el comercio portuario.
----
-Puerto comercial
-  Estilo arquitectónico: Destaca por sus monumentos históricos como el Castillo de la Concepción y las ruinas romanas, entre ellas el Teatro Romano. Su arquitectura refleja una rica herencia romana, militar y portuaria.
----
-Castillo de San Felipe
-  Importancia histórica: Ciudad fundada por los cartagineses en el siglo III a.C. (Carthago Nova), ha sido un puerto estratégico desde la antigüedad, participando en diversas conquistas y conflictos históricos. Fue clave durante la época romana.
----
-Sede del puerto flota Romano
-  Nivel de turismo: Cartagena es un destino turístico importante, conocido por su patrimonio histórico, su puerto, y festividades de interés regional e internacional como los Carthagineses y Romanos.
----
-Ciudad antigua con edificios históricos
-  Nivel educativo: Sede de la Universidad Politécnica de Cartagena, que ofrece una amplia oferta de estudios superiores, especialmente en ingeniería, tecnología y arquitectura.
----
-No especificado en el texto
----
-Campus de la Universidad de Murcia en Cartagena
-  Calidad de vida: Buena calidad de vida, con clima favorable y una oferta cultural y costera atractiva para residentes y visitantes.
----
-Buena calidad de vida con acceso a servicios sociales y culturales.
-  Medio ambiente: 
----
-Áreas verdes y zonas naturales protegidas
-  Seguridad: 
----
-Servicios de seguridad robustos con policía local y servicios de emergencia.
-  Limpieza: Sistema moderno para la recogida y tratamiento de residuos.
----
-Sistema moderno para la recogida y tratamiento de residuos.
+  Número de habitantes: 219.777
+  Servicios de transporte público: Conexiones ferroviarias (Madrid, Barcelona, Valencia, Alicante), red de autobuses urbanos e interurbanos, puerto marítimo activo y aeropuerto cercano en Corvera.
+  Limpieza: Dispone de un sistema moderno para recogida y tratamiento de residuos.
+  Actividades económicas: Agricultura, pesca, industria de licores, turismo cultural e histórico, y comercio marítimo a través de su importante puerto comercial.
+  Estilo arquitectónico: Notable patrimonio histórico con ruinas romanas como el Teatro Romano, Castillo de la Concepción y arquitectura portuaria militar.
+  Importancia histórica: Fundada en el siglo III a.C. como Carthago Nova, puerto estratégico clave en diversas épocas históricas, especialmente durante la dominación romana.
+  Nivel de turismo: Destino turístico relevante con monumentos antiguos, puerto histórico y eventos destacados como Carthagineses y Romanos.
+  Nivel educativo: Sede principal de la Universidad Politécnica de Cartagena (UPCT), con estudios de ingeniería y arquitectura.
+  Calidad de vida: Alta calidad de vida, clima favorable y buenos servicios culturales y sociales.
+  Medio ambiente: Dispone de áreas verdes, parques urbanos y espacios naturales protegidos.
+  Seguridad: Eficientes servicios de seguridad con policía local y sistemas de emergencia.
 
 Cáceres:
   País: España
@@ -235,57 +144,19 @@ Cuenca:
 
 Don Benito:
   País: España
----
-España
----
-España
   Comunidad autónoma: Extremadura
----
-Extremadura
----
-Extremadura
   Provincia: Badajoz
----
-Cáceres
----
-Badajoz
-  Número de habitantes: No se especifica
----
-35 000 aproximadamente
----
-Don Benito cuenta con áreas verdes y espacios recreativos
-  Servicios de transporte público: Dispone de servicios de autobús que conectan con otros municipios cercanos como Zafra, Salamanca, etc.
----
-La ciudad dispone de dos líneas de autobuses urbanos de la compañía Pormasa Autocares que unen Don Benito con Villanueva de la Serena
----
-WIFI Badajoz
-  Limpieza: 
----
-La ciudad gestiona los servicios de limpieza y recogida de residuos mediante sistemas municipales estándar.
-  Actividades económicas: Agricultura, comercio y servicios y pequeña industria.
----
-Las principales actividades económicas de la ciudad se centran en la agricultura
----
-Emprendimiento y Empresa
-  Estilo arquitectónico: Edificios históricos y probablemente monumentos culturales
----
-La ciudad no cuenta con monumentos históricos o estilos arquitectónicos específicos mencionados en el texto
-  Importancia histórica: Fundada mediados del siglo XV como aldea, posteriormente elevada a villa en 1735 y a ciudad en 1856. Históricamente resistió el dominio del Conde de Medellín.
----
-Don Benito no se describe como una ciudad con una importancia histórica destacada en el texto proporcionado.
----
-Fue fundada a mediados del siglo XV
-  Nivel de turismo: Gastronomía y celebraciones como las Jornadas Calabazonas
----
-La ciudad es conocida por sus festivales gastronómicos
-  Nivel educativo: Centros educativos históricos, pero no universidades
-  Calidad de vida: 
----
-La ciudad ofrece una calidad de vida adecuada con servicios básicos
-  Medio ambiente: 
-  Seguridad: 
----
-La ciudad dispone de una estación de la Policía Local para garantizar la seguridad de los habitantes.
+  Número de habitantes: 37728
+  Servicios de transporte público: Autobuses urbanos conectados con Villanueva de la Serena, además de conexiones interurbanas con otras localidades extremeñas cercanas.
+  Limpieza: Cuenta con un sistema municipal estándar para la recogida y gestión de residuos.
+  Actividades económicas: Economía basada en agricultura, comercio, servicios locales y pequeña industria.
+  Estilo arquitectónico: Posee algunos edificios históricos pero sin estilo arquitectónico dominante destacado.
+  Importancia histórica: Fundada en el siglo XV; elevada a ciudad en 1856. Históricamente relevante a nivel local pero sin grandes hitos nacionales.
+  Nivel de turismo: Turismo principalmente gastronómico y cultural con eventos como las Jornadas Calabazonas.
+  Nivel educativo: Dispone de varios centros educativos históricos pero no cuenta con universidad propia.
+  Calidad de vida: Adecuada calidad de vida con buenos servicios básicos.
+  Medio ambiente: Presencia de áreas verdes y espacios recreativos urbanos.
+  Seguridad: Servicios básicos efectivos garantizados por Policía Local.
 
 Getafe:
   País: España
@@ -312,8 +183,9 @@ Gijón:
   Limpieza: Dispone de servicios municipales de limpieza urbana y recogida de residuos, incluyendo sistemas de recogida selectiva para reciclaje.
   Actividades económicas: Las principales actividades económicas incluyen el sector servicios (comercio, hostelería, turismo), la actividad portuaria (Puerto de Gijón - El Musel), y la industria, destacando la metalúrgica. El turismo es una fuente de ingresos importante.
   Importancia histórica: Gijón tiene orígenes romanos (antigua Gigia). Tuvo relevancia en la Edad Media y experimentó un importante desarrollo industrial y portuario en los siglos XIX y XX, ligado a la minería del carbón asturiana y la siderurgia, convirtiéndose en un destacado núcleo económico y obrero.
-  Atracciones turísticas: Ofrece atractivos como la Playa de San Lorenzo (la más emblemática), la Playa de Poniente, el barrio de Cimavilla, el Cerro de Santa Catalina con el 'Elogio del Horizonte', el Jardín Botánico Atlántico, el Acuario de Gijón, el Museo del Ferrocarril de Asturias, y las Termas Romanas de Campo Valdés. La Universidad Laboral es también un importante reclamo arquitectónico y cultural. La ciudad es conocida por sus festividades y eventos culturales.
-  Educación: Gijón alberga un importante campus de la Universidad de Oviedo, con diversas facultades y escuelas técnicas (Escuela Politécnica de Ingeniería, Facultad de Comercio, Turismo y Ciencias Sociales Jovellanos, entre otras). Cuenta además con una red de centros de educación primaria, secundaria y formación profesional.
+  Estilo arquitectónico: Mezcla de estilos arquitectónicos antiguos y modernos; destacan monumentos como los baños romanos, la muralla romana, el Convento de San Agustín, así como arquitectura moderna como la Plaza de San Miguel.
+  Nivel de turismo: Ofrece atractivos como la Playa de San Lorenzo (la más emblemática), la Playa de Poniente, el barrio de Cimavilla, el Cerro de Santa Catalina con el 'Elogio del Horizonte', el Jardín Botánico Atlántico, el Acuario de Gijón, el Museo del Ferrocarril de Asturias, y las Termas Romanas de Campo Valdés. La Universidad Laboral es también un importante reclamo arquitectónico y cultural. La ciudad es conocida por sus festividades y eventos culturales.
+  Nivel educativo: Gijón alberga un importante campus de la Universidad de Oviedo, con diversas facultades y escuelas técnicas (Escuela Politécnica de Ingeniería, Facultad de Comercio, Turismo y Ciencias Sociales Jovellanos, entre otras). Cuenta además con una red de centros de educación primaria, secundaria y formación profesional.
   Calidad de vida: Generalmente se considera una ciudad con buena calidad de vida, valorada por sus zonas verdes (como el Parque de Isabel la Católica o el Parque Fluvial), su extensa línea de costa con playas urbanas, una variada oferta cultural y de ocio, servicios públicos y un tamaño manejable.
   Medio ambiente: Cuenta con importantes espacios verdes urbanos y periurbanos como el Jardín Botánico Atlántico, el Mirador de la Providencia y el Cerro de Santa Catalina. Se han realizado esfuerzos en la recuperación ambiental de zonas industriales y la gestión de residuos. Como ciudad costera, la calidad del agua marina es un aspecto relevante bajo vigilancia y mejora continua.
   Seguridad: Es considerada una ciudad con niveles de seguridad buenos, con presencia de policía local y nacional, y servicios de emergencia bien establecidos.
@@ -368,67 +240,19 @@ León:
 
 Logroño:
   País: España
----
-España
----
-España
   Comunidad autónoma: La Rioja
----
-La Rioja
----
-La Rioja
   Provincia: La Rioja
----
-La Rioja
----
-La Rioja
-  Número de habitantes: 151164
----
-158064
-  Servicios de transporte público: Dispone de trenes de media distancia (Renfe), red de autobuses urbanos e interurbanos, y conexiones por carretera a través de la A-68, N-120 y N-232. El aeropuerto más cercano está en Agoncillo.
----
-Autobuses urbanos y estación de tren (AVE)
----
-A-68
-  Limpieza: 
----
-No especificado
-  Actividades económicas: Su economía se basa en el sector terciario, la industria moderna, la viticultura y la gastronomía, con notable influencia en toda la comunidad riojana.
----
-Cultivo del viñedo
----
-Principal centro industrial y sector terciario
-  Estilo arquitectónico: Logroño presenta una mezcla de arquitectura medieval y moderna. Destacan la Concatedral de Santa María de la Redonda, el Paseo del Espolón, la Puerta del Revellín y varias iglesias históricas.
----
-Edificios con influencia medieval
----
-Concatedral de Santa María de la Redonda
-  Importancia histórica: Ciudad clave durante la Edad Media como frontera entre reinos. Su ubicación estratégica la convirtió en un punto importante del Camino de Santiago y en un centro eclesiástico. Fue Capital Española de la Gastronomía en 2012.
----
-Fue un centro cultural y político durante el Antiguo Régimen y tuvo roles relevantes en la Guerra Civil Española y en eventos deportivos internacionales.
----
-Capital gastronómica española en 2012
-  Nivel de turismo: Logroño es un destino turístico relevante gracias a su casco antiguo, el Parque del Ebro, sus puentes, iglesias, museos, y su famosa calle Laurel, epicentro gastronómico.
----
-Patrimonio histórico-artístico
----
-Parque del Ebro
-  Nivel educativo: Aloja la Universidad de La Rioja y cuenta con múltiples centros educativos. El Museo de La Rioja es un importante recurso cultural.
----
-Universidad de La Rioja.
-  Calidad de vida: Ofrece alta calidad de vida con acceso a servicios, oferta cultural, espacios naturales y buena infraestructura urbana. Presenta problemas menores de tráfico en horas punta.
----
- Alta calidad de vida
----
-Ciudad agradable y querida para los visitantes
-  Medio ambiente: Cuenta con parques urbanos como el Parque del Ebro y el Parque de la Ribera. No se reportan problemas graves de contaminación.
----
-Parque de los Saltos
----
-Parque del Ebro y zona natural ribereña
-  Seguridad: Es una ciudad segura, con servicios de emergencia bien organizados y accesibles.
----
-No especificado
+  Número de habitantes: 158064
+  Servicios de transporte público: Trenes regionales (Renfe), autobuses urbanos e interurbanos, conexiones por carretera (A-68, N-120, N-232) y aeropuerto cercano en Agoncillo.
+  Limpieza: Sistema municipal eficiente.
+  Actividades económicas: La ciudad es un centro de comercio del vino de Rioja, por el que la zona es notable, y de fabricación de productos madereros, metálicos y textiles.
+  Estilo arquitectónico: Arquitectura medieval y moderna, destacando la Concatedral de Santa María de la Redonda, la Puerta del Revellín y el Paseo del Espolón.
+  Importancia histórica: Centro estratégico en la Edad Media (Camino de Santiago), ciudad fronteriza entre reinos, Capital Gastronómica en 2012.
+  Nivel de turismo: Destino turístico por su casco antiguo, cultura gastronómica (Calle Laurel), patrimonio histórico y parques como el Parque del Ebro.
+  Nivel educativo: Sede principal de la Universidad de La Rioja y numerosos centros educativos.
+  Calidad de vida: Alta calidad de vida con excelente infraestructura urbana, cultural y natural.
+  Medio ambiente: Espacios verdes como el Parque del Ebro, Parque de la Ribera y sin problemas graves de contaminación reportados.
+  Seguridad: Ciudad segura con servicios de emergencia eficaces.
 
 Las Rozas de Madrid:
   País: España
@@ -480,73 +304,19 @@ Marbella:
 
 Melilla:
   País: España
----
-España
----
-España
   Comunidad autónoma: Ciudad Autónoma de Melilla
----
-Ciudad Autónoma de Melilla
----
-Ceuta y Melilla
   Provincia: Melilla
----
-Melilla
----
-Melilla
   Número de habitantes: 85493
----
-132
----
-86000
-  Servicios de transporte público: Melilla cuenta con autobuses urbanos, taxis, un puerto con ferris regulares hacia la península (Málaga, Almería, Motril) y un aeropuerto con vuelos a ciudades españolas.
----
-Autobuses y ferries
----
-Ferry a Algeciras
-  Limpieza: Dispone de un sistema eficiente de limpieza y reciclaje, con campañas públicas de concienciación y gestión adecuada de residuos.
----
-Muy limpia con una empresa municipal encargada de la recogida de basuras
----
-Buena red de saneamiento y recogida de basuras
-  Actividades económicas: 
----
-Administración pública
----
-Comercio con Marruecos y España
-  Estilo arquitectónico: Presenta una mezcla de arquitectura modernista, andalusí y militar. Destacan la Alcazaba, la Ciudadela, el edificio de Correos y la arquitectura colonial.
----
-N/A
----
-Ciudadela
-  Importancia histórica: 
----
-Ciudad amurallada construida durante la Reconquista y época colonial como puerto estratégico
----
-Fue un punto estratégico durante la Reconquista y formó parte del Imperio español desde 1497
-  Nivel de turismo: 
----
-Popular destino turístico por sus sitios históricos y playas
----
-Ciudadela
-  Nivel educativo: Dispone de centros de formación profesional, educación para adultos y un centro universitario adscrito a la Universidad de Granada.
----
-Escuela Oficial de Idiomas pero sin universidad propia
-  Calidad de vida: Melilla ofrece una buena calidad de vida, con clima mediterráneo, servicios públicos funcionales y una comunidad multicultural.
----
-Buena calidad de vida con servicios modernos y ubicación estratégica
----
-Buena calidad de vida con buenas infraestructuras y servicios públicos
-  Medio ambiente: Tiene espacios como el Parque Forestal y el Parque Hernández. Enfrenta retos ambientales por tráfico y densidad, pero cuenta con políticas locales de sostenibilidad.
----
-Ambiente limpio con zonas verdes y playas
----
-Parque de la Estación
-  Seguridad: La ciudad cuenta con sistemas de seguridad organizados, incluyendo Policía Local, Guardia Civil y vigilancia portuaria.
----
-Ciudad segura dentro del territorio español
----
-Buena seguridad con presencia policial y bajas tasas de criminalidad
+  Servicios de transporte público: Dispone de autobuses urbanos, taxis, un puerto con ferris regulares hacia Málaga, Almería y Motril, además de aeropuerto con vuelos nacionales.
+  Limpieza: Cuenta con un eficiente sistema municipal de limpieza urbana, reciclaje y gestión integral de residuos, respaldado por campañas públicas de concienciación.
+  Actividades económicas: Principalmente comercio con Marruecos y España, administración pública, sector servicios y actividades portuarias.
+  Estilo arquitectónico: Destaca por su mezcla única de estilos modernista, andalusí y militar; sobresalen la Ciudadela, edificios coloniales y la arquitectura modernista en el centro histórico.
+  Importancia histórica: Ciudad amurallada y enclave estratégico desde la Reconquista, forma parte del territorio español desde 1497, con importancia como puerto y fortaleza militar.
+  Nivel de turismo: Relevante destino turístico por sus playas, arquitectura histórica, la Ciudadela y su patrimonio cultural diverso.
+  Nivel educativo: Dispone de un centro universitario adscrito a la Universidad de Granada, además de centros de formación profesional y educación de adultos, incluyendo la Escuela Oficial de Idiomas.
+  Calidad de vida: Alta calidad de vida debido a su clima mediterráneo, multiculturalidad, infraestructuras modernas y buena provisión de servicios públicos.
+  Medio ambiente: Áreas verdes destacadas como el Parque Hernández y el Parque Forestal; enfrenta retos ambientales urbanos pero tiene políticas activas de sostenibilidad.
+  Seguridad: Buena seguridad ciudadana garantizada por la Policía Local, Guardia Civil y vigilancia específica en zonas portuarias, manteniendo bajas tasas de criminalidad.
 
 Oviedo:
   País: España
@@ -694,57 +464,19 @@ Sevilla:
 
 Soria:
   País: España
----
-España
----
-España
   Comunidad autónoma: Castilla y León
----
-Castilla y León
----
-Castilla y León
   Provincia: Soria
----
-Soria
----
-Soria
-  Número de habitantes: 40750
----
-Protección de zonas verdes como La Cuesta de los Cuervo
-  Servicios de transporte público: Servicios de autobús interurbano con conexión a otras ciudades y tren regional que conecta Soria con Madrid y Guadalajara.
----
-Ferroviaria con la línea Madrid-Zaragoza
-  Limpieza: 
----
-No se proporciona información específica sobre servicios de limpieza o gestión de residuos.
-  Actividades económicas: 
----
-Agricultura (trigo
----
-Turismo y probablemente servicios relacionados con el turismo
-  Estilo arquitectónico: Predomina la arquitectura románica y medieval, destacando el Monasterio de San Juan de Duero, la Ermita de San Saturio y numerosos edificios históricos.
----
-Arquitectura medieval con murallas
----
-Conjunto monumental del románico
-  Importancia histórica: Ciudad con importantes raíces prerromanas y romanas, destacada por su patrimonio románico y medieval.
----
-Soria ha sido una importante villa en época romana
----
-Soria es una ciudad con importancia histórica
-  Nivel de turismo: Destino turístico por su casco antiguo, arquitectura románica, espacios naturales como el Cañón del Río Lobos, y patrimonio cultural.
----
-La ciudad es un destino turístico importante en la provincia
-  Nivel educativo: Dispone de la Facultad de Ciencias de la Salud, adscrita a la Universidad de Valladolid.
-  Calidad de vida: Alta calidad de vida debido a servicios básicos eficientes, entorno natural privilegiado y baja densidad de población.
----
-Ciudad con una calidad de vida media-alta
-  Medio ambiente: Zonas verdes abundantes, parques naturales cercanos, rutas senderistas, y políticas de sostenibilidad ambiental activas.
-  Seguridad: Ciudad tranquila y segura, con eficientes servicios de emergencia y protección ciudadana.
----
-La seguridad está cubierta por la Policía Local y el Servicio de Emergencias 112 Castilla y León.
----
-El Ayuntamiento ha implementado un servicio gratuito de WiFi para los ciudadanos y visitantes desde 2014
+  Número de habitantes: 40.750
+  Servicios de transporte público: Servicios de autobuses interurbanos y tren regional que conecta Soria con Madrid.
+  Limpieza: Servicios básicos municipales efectivos.
+  Actividades económicas: Industria agroalimentaria y turismo cultural.
+  Estilo arquitectónico: Arquitectura predominantemente románica y medieval; destaca el Monasterio de San Juan de Duero y la Ermita de San Saturio.
+  Importancia histórica: Orígenes prerromanos y romanos; ciudad relevante por su patrimonio histórico medieval.
+  Nivel de turismo: Importante destino provincial por patrimonio románico y natural (Cañón del Río Lobos).
+  Nivel educativo: Cuenta con la Facultad de Ciencias de la Salud (Universidad de Valladolid).
+  Calidad de vida: Alta calidad por entorno natural privilegiado, servicios adecuados y baja densidad poblacional.
+  Medio ambiente: Abundantes zonas verdes, parques naturales cercanos y políticas ambientales activas.
+  Seguridad: Ciudad tranquila con servicios eficientes de Policía Local y Emergencias 112.
 
 Talavera de la Reina:
   País: España
@@ -764,73 +496,19 @@ Talavera de la Reina:
 
 Tomelloso:
   País: España
----
-España
----
-España
   Comunidad autónoma: Castilla-La Mancha
----
-Castilla-La Mancha
----
-Castilla-La Mancha
   Provincia: Ciudad Real
----
-Ciudad Real
----
-Ciudad Real
-  Número de habitantes: 36523
----
-Área natural con viñedos y paisajes rurales.
----
-36.281 habitantes (datos oficiales del I.N.E. correspondientes al 1 de enero de 2017)
-  Servicios de transporte público: Servicios regulares de autobús hacia localidades cercanas como Socuéllamos, Argamasilla de Alba, Valdepeñas y servicios estacionales hacia las Lagunas de Ruidera.
----
-Carretera y ferrocarril con conexiones a Madrid
----
-No se menciona información específica sobre servicios de transporte público en el texto proporcionado.
-  Limpieza: Cuenta con servicios municipales básicos de limpieza y gestión de residuos.
----
-El municipio cuenta con un sistema de limpieza y recogida selectiva de residuos
----
-No se menciona información específica sobre limpieza
-  Actividades económicas: Destaca la viticultura, producción vinícola, agricultura, maquinaria agrícola e industrias relacionadas con el sector agroalimentario.
----
-Producción vinícola
----
-La viticultura y la elaboración de vino constituyen actividades económicas principales
-  Estilo arquitectónico: 
----
-Museo Nacional de la Agricultura
----
-No se menciona información específica sobre el estilo arquitectónico predominante o monumentos destacados en el texto proporcionado.
-  Importancia histórica: Ciudad relevante en agricultura y producción vinícola en la región manchega. Cercana a Argamasilla de Alba, lugar histórico vinculado a Cervantes.
----
-Fue un enclave estratégico en época medieval y tiene relación con Miguel de Cervantes
----
-Tomelloso ha sido un referente en la zona por su crecimiento demográfico y económico desde hace varios lustros.
-  Nivel de turismo: Atractivos turísticos relacionados con la enología, patrimonio cultural, arte contemporáneo y proximidad a espacios naturales como las Lagunas de Ruidera.
----
-Bodegas y viñedos
----
-No se menciona información específica sobre el nivel de turismo o lugares turísticos más visitados en el texto proporcionado.
-  Nivel educativo: Dispone de centros educativos secundarios y formación profesional, pero no alberga universidades.
----
-No dispone de universidad
----
-No se menciona información específica sobre universidades o centros de estudio relevantes en el texto proporcionado.
-  Calidad de vida: Calidad de vida razonable, afectada en parte por el clima árido, pero con buena conectividad regional.
----
-Buena calidad de vida con acceso a servicios culturales
----
-No se menciona información específica sobre la calidad de vida en el texto proporcionado.
-  Medio ambiente: Clima mediterráneo continental árido, influencia del cercano Parque Natural Lagunas de Ruidera, con iniciativas para producción de energías renovables.
----
-El relieve es totalmente horizontal y árido
-  Seguridad: Ciudad tranquila y segura, con un bajo índice de criminalidad.
----
-El municipio dispone de un sistema de emergencias y seguridad local para garantizar la integridad de los habitantes.
----
-No se menciona información específica sobre seguridad y medidas de protección en el texto proporcionado.
+  Número de habitantes: 36.523
+  Servicios de transporte público: Autobuses regulares regionales hacia localidades cercanas; conexión por carretera con Ciudad Real y Toledo.
+  Limpieza: Servicios municipales básicos y sistema de recogida selectiva de residuos.
+  Actividades económicas: Viticultura y producción vinícola destacadas, agricultura e industria agroalimentaria.
+  Estilo arquitectónico: Arquitectura manchega sencilla; destaca Museo Nacional de Arte Contemporáneo y Museo del Carro.
+  Importancia histórica: Relevante históricamente por su crecimiento económico y agrícola en la región manchega.
+  Nivel de turismo: Enoturismo, cultura local y cercanía al Parque Natural Lagunas de Ruidera.
+  Nivel educativo: Centros educativos y FP; sin universidad propia.
+  Calidad de vida: Razonable calidad, clima árido pero buena conectividad.
+  Medio ambiente: Clima árido mediterráneo continental; proximidad al Parque Natural Lagunas de Ruidera.
+  Seguridad: Ciudad segura, baja criminalidad.
 
 Toledo:
   País: España
@@ -930,33 +608,17 @@ Zaragoza:
 
 Puerto Real:
   País: España
----
-España
   Comunidad autónoma: Andalucía
----
-Andalucía
   Provincia: Cádiz
----
-Cádiz
-  Número de habitantes: Áreas naturales con bosques de pino en Las Canteras.
-  Servicios de transporte público: {
-  Limpieza: No se proporciona información específica.
-  Actividades económicas: 
-  Estilo arquitectónico: 
----
-Iglesia Parroquial Mayor de Nuestra Señora de la Asunción
-  Importancia histórica: 
----
-Fundada por los Reyes Católicos en 1483
-  Nivel de turismo: 
----
-Parques naturales como el Pinar del Río San Pedro y clubes náuticos
-  Nivel educativo: No disponible
-  Calidad de vida: Villa marinera con proximidad al mar
----
-Buena
-  Medio ambiente: No disponible
----
-Existe una importante presencia de parques naturales y áreas verdes
-  Seguridad: 
+  Número de habitantes: Aproximadamente 41.700 habitantes
+  Servicios de transporte público: Cuenta con autobuses interurbanos, estación de tren con servicios regionales y cercanías hacia Cádiz y Jerez, además de buenas conexiones por carretera.
+  Limpieza: Servicios municipales básicos de limpieza y gestión de residuos urbanos.
+  Actividades económicas: Las principales actividades incluyen la construcción naval (astilleros), pesca, comercio local y actividades relacionadas con el sector portuario.
+  Estilo arquitectónico: Destaca la arquitectura tradicional andaluza con edificios históricos como la Iglesia Parroquial María Auxiliadora, así como viviendas típicas marineras.
+  Importancia histórica: Ciudad fundada por los Reyes Católicos en 1483, con relevancia histórica vinculada principalmente a su actividad marítima y naval.
+  Nivel de turismo: Moderado; atractivos turísticos relacionados con el patrimonio histórico, la cercanía al mar y espacios naturales como el Pinar del Río San Pedro.
+  Nivel educativo: Dispone de centros educativos de primaria, secundaria y formación profesional, aunque no cuenta con universidades propias.
+  Calidad de vida: Alta calidad de vida gracias a su ubicación costera, clima favorable y servicios adecuados.
+  Medio ambiente: Posee importantes áreas verdes y espacios naturales protegidos, destacando Las Canteras y el Pinar del Río San Pedro.
+  Seguridad: Ciudad segura con servicios básicos efectivos por parte de la Policía Local y Guardia Civil.
 

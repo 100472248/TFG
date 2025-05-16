@@ -46,7 +46,7 @@
         "Calidad de vida": "Alta calidad de vida por su cercanía a Madrid, patrimonio cultural y natural, y servicios públicos adecuados.",
         "Medio ambiente": "Numerosas áreas verdes protegidas, especialmente los jardines del palacio a orillas del río Tajo, con baja contaminación.",
         "Seguridad": "Buenos servicios locales de seguridad pública y protección ciudadana."
-  },
+    },
     "Barcelona": {
         "País": "España",
         "Comunidad autónoma": "Cataluña",
@@ -110,7 +110,7 @@
         "Calidad de vida": "Alta calidad de vida, clima favorable y buenos servicios culturales y sociales.",
         "Medio ambiente": "Dispone de áreas verdes, parques urbanos y espacios naturales protegidos.",
         "Seguridad": "Eficientes servicios de seguridad con policía local y sistemas de emergencia."
-  },
+    },
     "Cáceres": {
         "País": "España",
         "Comunidad autónoma": "Extremadura",
@@ -158,7 +158,7 @@
         "Calidad de vida": "Adecuada calidad de vida con buenos servicios básicos.",
         "Medio ambiente": "Presencia de áreas verdes y espacios recreativos urbanos.",
         "Seguridad": "Servicios básicos efectivos garantizados por Policía Local."
-  },
+    },
     "Getafe": {
         "País": "España",
         "Comunidad autónoma": "Comunidad de Madrid",
@@ -239,7 +239,7 @@
         "Medio ambiente": "Presenta un clima mediterráneo continentalizado con inviernos fríos y veranos calurosos. Cuenta con parques urbanos y zonas verdes.",
         "Seguridad": "La ciudad mantiene buenos niveles de seguridad, con cuerpo policial bien organizado y sistemas de videovigilancia."
     },
-     "Logroño": {
+    "Logroño": {
         "País": "España",
         "Comunidad autónoma": "La Rioja",
         "Provincia": "La Rioja",
@@ -254,7 +254,7 @@
         "Calidad de vida": "Alta calidad de vida con excelente infraestructura urbana, cultural y natural.",
         "Medio ambiente": "Espacios verdes como el Parque del Ebro, Parque de la Ribera y sin problemas graves de contaminación reportados.",
         "Seguridad": "Ciudad segura con servicios de emergencia eficaces."
-  },
+    },
     "Las Rozas de Madrid": {
         "País": "España",
         "Comunidad autónoma": "Comunidad de Madrid",
@@ -318,7 +318,7 @@
         "Calidad de vida": "Alta calidad de vida debido a su clima mediterráneo, multiculturalidad, infraestructuras modernas y buena provisión de servicios públicos.",
         "Medio ambiente": "Áreas verdes destacadas como el Parque Hernández y el Parque Forestal; enfrenta retos ambientales urbanos pero tiene políticas activas de sostenibilidad.",
         "Seguridad": "Buena seguridad ciudadana garantizada por la Policía Local, Guardia Civil y vigilancia específica en zonas portuarias, manteniendo bajas tasas de criminalidad."
-  },
+    },
     "Oviedo": {
         "País": "España",
         "Comunidad autónoma": "Asturias",
@@ -478,7 +478,7 @@
         "Calidad de vida": "Alta calidad por entorno natural privilegiado, servicios adecuados y baja densidad poblacional.",
         "Medio ambiente": "Abundantes zonas verdes, parques naturales cercanos y políticas ambientales activas.",
         "Seguridad": "Ciudad tranquila con servicios eficientes de Policía Local y Emergencias 112."
-  },
+    },
     "Talavera de la Reina": {
         "País": "España",
         "Comunidad autónoma": "Castilla-La Mancha",
@@ -510,7 +510,7 @@
         "Calidad de vida": "Razonable calidad, clima árido pero buena conectividad.",
         "Medio ambiente": "Clima árido mediterráneo continental; proximidad al Parque Natural Lagunas de Ruidera.",
         "Seguridad": "Ciudad segura, baja criminalidad."
-  },
+    },
     "Toledo": {
         "País": "España",
         "Comunidad autónoma": "Castilla-La Mancha",
@@ -607,7 +607,6 @@
         "Medio ambiente": "Cuenta con áreas verdes como los parques del Ebro y políticas activas hacia la sostenibilidad ambiental.",
         "Seguridad": "Buen nivel de seguridad ciudadana con servicios policiales efectivos."
     },
-
     "Puerto Real": {
         "País": "España",
         "Comunidad autónoma": "Andalucía",
