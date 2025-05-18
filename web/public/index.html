@@ -5,15 +5,15 @@
   <title>Sync LocalStorage ↔ JSON</title>
 </head>
 <body>
-  <h1>Gestión de Usuarios</h1>
-  <input type="text" id="username" placeholder="Nombre de usuario"><br><br>
-
-  <button onclick="subirDesdeArchivos()">Subir archivos → LocalStorage</button>
-  <input type="file" id="fileInput" multiple accept=".json"><br><br>
-
-  <button onclick="guardarEnServidor()">LocalStorage → Guardar en servidor</button>
-  <button onclick="cargarDesdeServidor()">Servidor → Cargar en LocalStorage</button>
-
+  <header>
+    <h1 class="webtitle">WEB</h1>
+    <aside class="userpanel">
+        <b id="username"></b>
+        <button id="login-button">Iniciar sesión</button>
+        <button id="logout-button">Cerrar sesión</button>
+    </aside>
+  </header>
+  <script src="socket.js"></script>
   <script src="web.js"></script>
 </body>
 </html>

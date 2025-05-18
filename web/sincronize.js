@@ -43,3 +43,53 @@ app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
 
+app.post('/register', (req, res) => {
+    const { username, password, email, ciudad } = req.body;
+
+    if (!username || !password || !email || !ciudad) {
+        return res.status(400).send('Faltan datos del perfil');
+    }
+
+    const userDir = path.join(DBS_FOLDER, username);
+    if (!fs.existsSync(userDir)) fs.mkdirSync(userDir, { recursive: true });
+
+    const profilePath = path.join(userDir, `${username}_profile.json`);
+
+    if (fs.existsSync(profilePath)) {
+        return res.status(409).send('El usuario ya existe');
+    }
+
+    // Crear profile.json
+    const profile = { username, password, email, ciudad };
+    fs.writeFileSync(profilePath, JSON.stringify(profile, null, 2), 'utf-8');
+
+    // Crear points.json
+    const pointsPath = path.join(userDir, `${username}_points.json`);
+    fs.writeFileSync(pointsPath, JSON.stringify({ puntos: 0 }, null, 2), 'utf-8');
+
+    // Crear reviews.json
+    const reviewsPath = path.join(userDir, `${username}_reviews.json`);
+    fs.writeFileSync(reviewsPath, JSON.stringify([], null, 2), 'utf-8');
+
+    res.send('Usuario registrado correctamente con archivos iniciales');
+});
+
+
+// Ruta para login (verifica contra profile.json)
+app.post('/login', (req, res) => {
+    const { username, password } = req.body;
+    if (!username || !password) return res.status(400).send('Faltan datos');
+
+    const profilePath = path.join(DBS_FOLDER, username, `${username}_profile.json`);
+    if (!fs.existsSync(profilePath)) {
+        return res.status(404).send('Usuario no encontrado');
+    }
+
+    const profile = JSON.parse(fs.readFileSync(profilePath, 'utf-8'));
+
+    if (profile.password === password) {
+        res.json({ success: true, username: profile.username });
+    } else {
+        res.json({ success: false, message: 'Contraseña incorrecta' });
+    }
+});

@@ -1,58 +1,32 @@
-async function guardarEnServidor() {
-    const username = document.getElementById('username').value.trim();
-    if (!username) return alert('Introduce un nombre de usuario');
 
-    const points = localStorage.getItem(`${username}_points`);
-    const reviews = localStorage.getItem(`${username}_reviews`);
+const ventanaID = Date.now() + "_" + Math.random().toString(36).slice(2);
 
-    if (!points || !reviews) return alert('Faltan datos en localStorage');
+window.addEventListener('load', () => {
+  let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
+  abiertas.push(ventanaID);
+  localStorage.setItem('pestanas_abiertas', JSON.stringify(abiertas));
+  notificarCambio();
+});
 
-    const body = {
-        points: JSON.parse(points),
-        reviews: JSON.parse(reviews)
-    };
+window.addEventListener('beforeunload', () => {
+  let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
+  abiertas = abiertas.filter(id => id !== ventanaID);
+  localStorage.setItem('pestanas_abiertas', JSON.stringify(abiertas));
+  notificarCambio();
+});
 
-    const res = await fetch(`/save/${username}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body)
-    });
+// Observa cambios en otras pestañas
+window.addEventListener('storage', () => {
+  notificarCambio();
+});
 
-    alert(await res.text());
+function notificarCambio() {
+  const abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
+  console.log(`Hay ${abiertas.length} pestaña(s) abierta(s)`);
+
+  if (abiertas.length === 0) {
+    console.log("🔥 ¡Ya no hay ninguna pestaña abierta!");
+    logoutUsuario();
+  }
 }
 
-async function cargarDesdeServidor() {
-    const username = document.getElementById('username').value.trim();
-    if (!username) return alert('Introduce un nombre de usuario');
-
-    const res = await fetch(`/load/${username}`);
-    if (!res.ok) return alert('No se pudo cargar del servidor');
-
-    const data = await res.json();
-    localStorage.setItem(`${username}_points`, JSON.stringify(data.points));
-    localStorage.setItem(`${username}_reviews`, JSON.stringify(data.reviews));
-    alert('Datos cargados en localStorage');
-}
-
-function subirDesdeArchivos() {
-    const username = document.getElementById('username').value.trim();
-    const input = document.getElementById('fileInput');
-    const files = input.files;
-
-    if (!username || files.length < 2) return alert('Selecciona usuario y dos archivos');
-
-    Array.from(files).forEach(file => {
-        const reader = new FileReader();
-        reader.onload = () => {
-            const data = JSON.parse(reader.result);
-            if (file.name.includes('points')) {
-                localStorage.setItem(`${username}_points`, JSON.stringify(data));
-            } else if (file.name.includes('reviews')) {
-                localStorage.setItem(`${username}_reviews`, JSON.stringify(data));
-            }
-        };
-        reader.readAsText(file);
-    });
-
-    alert('Archivos subidos a localStorage');
-}
