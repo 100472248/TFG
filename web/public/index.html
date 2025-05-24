@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Sync LocalStorage ↔ JSON</title>
+  <title>InitPage</title>
 </head>
 <body>
   <header>
     <h1 class="webtitle">WEB</h1>
     <aside class="userpanel">
         <b id="username"></b>
-        <button id="login-button">Iniciar sesión</button>
-        <button id="logout-button">Cerrar sesión</button>
+        <a id="login-button" href="register.html">Iniciar sesión</a>
+        <button id="logout-button" onclick="logoutUsuario()">Cerrar sesión</button>
     </aside>
   </header>
   <script src="socket.js"></script>

@@ -1,5 +1,15 @@
 let usuarioActual = localStorage.getItem("Online"); // Puedes asignar dinámicamente desde un input o login
 
+window.onload = function() {
+if (usuarioActual === "") {
+    document.getElementById("login-button").style.display = "block";
+    document.getElementById("logout-button").style.display = "none";
+}
+else{   
+    document.getElementById("login-button").style.display = "none";
+    document.getElementById("logout-button").style.display = "block";}
+document.getElementById("username").innerHTML= usuarioActual;
+}
 async function guardarEnServidor() {
     if (!usuarioActual) {
         alert('usuarioActual no definido');
@@ -81,16 +91,20 @@ async function registrarUsuario(profile) {
 
     const msg = await res.text();
     console.log(msg);
+    openSesion(profile.username);
 }
 
-async function loginUsuario(username, password) {
+async function loginUsuario(profile) {
+    usuario = profile.username
+    password = profile.password
     const res = await fetch('/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password })
+        body: JSON.stringify({username, password })
     });
 
     const data = await res.json();
+    openSesion(profile.username);
 
     if (data.success) {
         // Guarda el usuario actual en memoria o en sessionStorage/localStorage (si quieres)
@@ -101,10 +115,4 @@ async function loginUsuario(username, password) {
         console.log(`Login fallido: ${data.message}`);
         return false;
     }
-}
-
-function logoutUsuario() {
-    usuarioActual = null;
-    localStorage.setItem("Online", null);
-    console.log('Usuario desconectado');
 }

@@ -30,3 +30,18 @@ function notificarCambio() {
   }
 }
 
+function openSesion(usuario) {
+  localStorage.setItem("Online", usuario);
+  console.log(`Sesión abierta para ${usuario}`);
+  window.location.href = "index.html";
+}
+
+function logoutUsuario() {
+  if (localStorage.getItem("Online") == "") {
+    console.log("No hay sesión abierta");
+  }
+  else {localStorage.setItem("Online", "");
+    console.log("Sesión cerrada");
+    window.location.href = "register.html"; // Redirigir a login
+  }
+}
