@@ -8,12 +8,12 @@
     <header>
         <h1 class="webtitle">ACCESO DE USUARIOS</h1>
         <aside class="userpanel">
-            <b id="username"></b>
+            <b id="usr"></b>
             <a id="login-button" href="register.html">Iniciar sesión</a>
             <button id="logout-button" onclick="logoutUsuario()">Cerrar sesión</button>
         </aside>
     </header>
-    <form id="login-form" method="post" action="return loginUsuario(submit)">
+    <form id="login-form">
         <label for="username">Nombre de usuario:</label>
         <input type="text" id="username" name="username" required />
         <br />
@@ -22,7 +22,7 @@
         <br />
         <button type="submit">Iniciar sesión</button>
     </form>
-    <form id="register-form" method="post" action="return registrarUsuario(submit)">
+    <form id="register-form">
         <label for="new-username">Nombre de usuario:</label>
         <input type="text" id="new-username" name="new-username" required />
         <br />

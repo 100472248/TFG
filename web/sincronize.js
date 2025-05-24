@@ -15,7 +15,9 @@ app.post('/save/:username', (req, res) => {
     const { username } = req.params;
     const { points, reviews } = req.body;
 
-    if (!points || !reviews) return res.status(400).send('Faltan datos');
+    if (points === undefined || reviews === undefined) {
+    return res.status(400).json({ success: false, message: 'Faltan datos points o reviews' });
+}
 
     const userDir = path.join(DBS_FOLDER, username);
     if (!fs.existsSync(userDir)) fs.mkdirSync(userDir, { recursive: true });
@@ -76,14 +78,16 @@ app.post('/register', (req, res) => {
 });
 
 
-// Ruta para login (verifica contra profile.json)
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
-    if (!username || !password) return res.status(400).send('Faltan datos');
+
+    if (username === undefined || password === undefined) {
+        return res.status(400).json({ success: false, message: 'Faltan datos en la petición' });
+    }
 
     const profilePath = path.join(DBS_FOLDER, username, `${username}_profile.json`);
     if (!fs.existsSync(profilePath)) {
-        return res.status(404).send('Usuario no encontrado');
+        return res.status(404).json({ success: false, message: 'Usuario no encontrado' });
     }
 
     const profile = JSON.parse(fs.readFileSync(profilePath, 'utf-8'));
@@ -94,3 +98,6 @@ app.post('/login', (req, res) => {
         res.json({ success: false, message: 'Contraseña incorrecta' });
     }
 });
+
+
+app.get('/favicon.ico', (req, res) => res.status(204).end());
