@@ -1,5 +1,6 @@
 
 const ventanaID = Date.now() + "_" + Math.random().toString(36).slice(2);
+let timeoutVerificacion = null;
 
 window.addEventListener('load', () => {
   let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
@@ -15,20 +16,26 @@ window.addEventListener('beforeunload', () => {
   notificarCambio();
 });
 
-// Observa cambios en otras pestañas
 window.addEventListener('storage', () => {
   notificarCambio();
 });
 
 function notificarCambio() {
   const abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
-  console.log(`Hay ${abiertas.length} pestaña(s) abierta(s)`);
+  console.log(`🪟 Pestañas detectadas: ${abiertas.length}`);
 
-  if (abiertas.length === 0) {
-    console.log("🔥 ¡Ya no hay ninguna pestaña abierta!");
-    logoutUsuario();
-  }
+  if (timeoutVerificacion) clearTimeout(timeoutVerificacion);
+
+  // Esperamos 500 ms antes de confirmar si no queda ninguna
+  timeoutVerificacion = setTimeout(() => {
+    const recheck = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
+    if (recheck.length === 0) {
+      console.log("🔥 ¡Confirmado! Ya no hay ninguna pestaña abierta.");
+      logoutUsuario();
+    }
+  }, 500); // Puedes ajustar este tiempo según lo sensible que quieras
 }
+
 
 function openSesion(usuario) {
   localStorage.setItem("Online", usuario);

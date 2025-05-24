@@ -180,6 +180,7 @@ async function loginUsuario(profile) {
 
     if (data.success) {
         usuarioActual = data.username;
+        console.log(`Usuario ${usuarioActual} autenticado correctamente`);
         localStorage.setItem("Online", usuarioActual);
         openSesion(usuarioActual);
         console.log(`Login correcto: ${usuarioActual}`);
