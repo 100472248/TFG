@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link href="index.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8" />
   <title>InitPage</title>
 </head>
 <body>
   <header>
-    <h1 class="webtitle">WEB</h1>
+    <div class= "home-button">
+       <button id="home-button" onclick="window.location.href='index.html'">MENÚ PRINCIPAL</button>
+    </div>
+    <h1 class="webtitle">CITYEXPLORER</h1>
     <aside class="userpanel">
-        <b id="usr"></b>
-        <a id="login-button" href="register.html">Iniciar sesión</a>
-        <button id="logout-button" onclick="logoutUsuario()">Cerrar sesión</button>
+        <button id="login-button" onclick="window.location.href='register.html'">INICIAR SESION</button>
+        <button id="logout-button" onclick="logoutUsuario()" class="up_boton">CERRAR SESION</button>
+        <b id="usr" class="usr"></b>
     </aside>
   </header>
   <script src="socket.js"></script>

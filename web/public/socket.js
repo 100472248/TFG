@@ -45,7 +45,10 @@ window.onload = function() {
         document.getElementById("login-button").style.display = "none";
         document.getElementById("logout-button").style.display = "block";
     }
-    document.getElementById("usr").innerHTML = usuarioActual || "Invitado";
+    document.getElementById("usr").innerHTML = usuarioActual || "";
+    if (window.location.pathname === "/register.html") {
+        showLogin();
+    }
 };
 
 async function guardarEnServidor() {

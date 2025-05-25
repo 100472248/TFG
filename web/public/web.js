@@ -52,3 +52,16 @@ function logoutUsuario() {
     window.location.href = "register.html"; // Redirigir a login
   }
 }
+
+function showLogin() {
+    document.getElementById("login-form").style.display = "block";
+    document.getElementById("register-form").style.display = "none";
+    document.getElementById("show-login").style.backgroundColor = "yellow";
+    document.getElementById("show-register").style.backgroundColor = "white";
+}
+function showRegister() {
+    document.getElementById("login-form").style.display = "none";
+    document.getElementById("register-form").style.display = "block";
+        document.getElementById("show-login").style.backgroundColor = "white";
+    document.getElementById("show-register").style.backgroundColor = "yellow";
+}
