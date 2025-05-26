@@ -2,11 +2,15 @@
 const ventanaID = Date.now() + "_" + Math.random().toString(36).slice(2);
 let timeoutVerificacion = null;
 
+
 window.addEventListener('load', () => {
   let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
   abiertas.push(ventanaID);
   localStorage.setItem('pestanas_abiertas', JSON.stringify(abiertas));
   notificarCambio();
+  if (window.location.pathname == "/index.html"){
+    LoopIndex();
+}
 });
 
 window.addEventListener('beforeunload', () => {
@@ -66,6 +70,25 @@ function showRegister() {
     document.getElementById("show-register").style.backgroundColor = "yellow";
 }
 
+function LoopIndex(){
+  const medias = JSON.parse(localStorage.getItem("general_data") || "{}");
+  for( const ciudad in medias) {
+    showTotal(ciudad, medias[ciudad]);
+  }
+}
+
+function showTotal(ciudad, nota){
+  let variable = "id-" + ciudad;
+  let elemento = document.getElementById(variable);
+  console.log(elemento)
+
+  if (!nota || typeof nota.total !== "number" || isNaN(nota.total)) {
+    elemento.innerHTML = "NOT ENOUGH DATA";
+  }
+
+  elemento.innerHTML = nota["total"];
+}
+
 // general_data desde backend
 fetch("/api/general_data")
   .then(r => r.json())
@@ -77,3 +100,4 @@ fetch("/api/gepeto_reviews")
   .then(data => {
     localStorage.setItem("Gepeto_reviews", JSON.stringify(data));
   });
+
