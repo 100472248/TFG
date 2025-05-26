@@ -117,17 +117,17 @@
     "total": 3.5
   },
   "Don Benito": {
-    "Servicios de transporte público": 2,
-    "Limpieza": 3,
-    "Actividades económicas": 2,
-    "Estilo arquitectónico": 5,
-    "Importancia histórica": 4,
-    "Nivel de turismo": 3.5,
-    "Nivel educativo": 3.5,
+    "Servicios de transporte público": 2.5,
+    "Limpieza": 3.5,
+    "Actividades económicas": 3,
+    "Estilo arquitectónico": 3,
+    "Importancia histórica": 2.5,
+    "Nivel de turismo": 2.25,
+    "Nivel educativo": 3.75,
     "Calidad de vida": 3,
-    "Medio ambiente": 3.5,
-    "Seguridad": 3,
-    "total": 3.25
+    "Medio ambiente": 3,
+    "Seguridad": 3.75,
+    "total": 3.02
   },
   "Getafe": {
     "Servicios de transporte público": 3.5,
@@ -299,17 +299,17 @@
     "total": 3.95
   },
   "Plasencia": {
-    "Servicios de transporte público": 3.5,
+    "Servicios de transporte público": 3.25,
     "Limpieza": 3.5,
-    "Actividades económicas": 3.5,
-    "Estilo arquitectónico": 3.5,
+    "Actividades económicas": 3.25,
+    "Estilo arquitectónico": 3.75,
     "Importancia histórica": 4,
-    "Nivel de turismo": 4,
-    "Nivel educativo": 3.5,
-    "Calidad de vida": 3.5,
-    "Medio ambiente": 3.5,
-    "Seguridad": 3.5,
-    "total": 3.6
+    "Nivel de turismo": 4.25,
+    "Nivel educativo": 3.75,
+    "Calidad de vida": 3.75,
+    "Medio ambiente": 4.25,
+    "Seguridad": 3.25,
+    "total": 3.7
   },
   "Reus": {
     "Servicios de transporte público": 3.5,
@@ -416,17 +416,17 @@
     "total": 3.4
   },
   "Toledo": {
-    "Servicios de transporte público": 3.5,
-    "Limpieza": 4,
-    "Actividades económicas": 3.5,
-    "Estilo arquitectónico": 3.5,
-    "Importancia histórica": 3.5,
+    "Servicios de transporte público": 3.25,
+    "Limpieza": 4.25,
+    "Actividades económicas": 3.75,
+    "Estilo arquitectónico": 4.25,
+    "Importancia histórica": 4.25,
     "Nivel de turismo": 3.5,
-    "Nivel educativo": 3.5,
+    "Nivel educativo": 3.75,
     "Calidad de vida": 4,
-    "Medio ambiente": 3.5,
-    "Seguridad": 3.5,
-    "total": 3.6
+    "Medio ambiente": 3.75,
+    "Seguridad": 3.75,
+    "total": 3.85
   },
   "Valencia": {
     "Servicios de transporte público": 3.5,

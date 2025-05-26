@@ -147,12 +147,13 @@ app.post('/login', (req, res) => {
 app.get('/api/general_data', (req, res) => {
   const general = calcularNotasMedias();
 
-  // Guardar también en disco
+  // Guarda el resultado en general_data.json en la raíz del proyecto
   const outputPath = path.join(__dirname, 'general_data.json');
   fs.writeFileSync(outputPath, JSON.stringify(general, null, 2), 'utf-8');
 
   res.json(general);
 });
+
 
 app.get('/api/gepeto_reviews', (req, res) => {
   const reviewsPath = path.join(DBS_FOLDER, "Gepeto", "Gepeto_reviews.json");
