@@ -65,3 +65,15 @@ function showRegister() {
         document.getElementById("show-login").style.backgroundColor = "white";
     document.getElementById("show-register").style.backgroundColor = "yellow";
 }
+
+// general_data desde backend
+fetch("/api/general_data")
+  .then(r => r.json())
+  .then(data => localStorage.setItem("general_data", JSON.stringify(data)));
+
+
+fetch("/api/gepeto_reviews")
+  .then(res => res.json())
+  .then(data => {
+    localStorage.setItem("Gepeto_reviews", JSON.stringify(data));
+  });

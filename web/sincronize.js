@@ -42,6 +42,51 @@ app.get('/load/:username', (req, res) => {
     }
 });
 
+function calcularNotasMedias() {
+  const usuarios = fs.readdirSync(DBS_FOLDER).filter(dir =>
+    fs.lstatSync(path.join(DBS_FOLDER, dir)).isDirectory()
+  );
+
+  const acumulado = {}; // ciudad -> categoría -> array de notas
+
+  for (const usuario of usuarios) {
+    const pointsPath = path.join(DBS_FOLDER, usuario, `${usuario}_points.json`);
+    if (!fs.existsSync(pointsPath)) continue;
+
+    const points = JSON.parse(fs.readFileSync(pointsPath, 'utf-8'));
+
+    for (const [ciudad, categorias] of Object.entries(points)) {
+      if (!acumulado[ciudad]) acumulado[ciudad] = {};
+
+      for (const [clave, nota] of Object.entries(categorias)) {
+        if (!acumulado[ciudad][clave]) acumulado[ciudad][clave] = [];
+        acumulado[ciudad][clave].push(Number(nota));
+      }
+    }
+  }
+
+  const resultado = {};
+  for (const [ciudad, categorias] of Object.entries(acumulado)) {
+    resultado[ciudad] = {};
+    let sumaTotal = 0;
+    let totalCategorias = 0;
+
+    for (const [clave, notas] of Object.entries(categorias)) {
+      const media = notas.reduce((a, b) => a + b, 0) / notas.length;
+      resultado[ciudad][clave] = Number(media.toFixed(2));
+      sumaTotal += media;
+      totalCategorias++;
+    }
+
+    if (totalCategorias > 0) {
+      resultado[ciudad]["total"] = Number((sumaTotal / totalCategorias).toFixed(2));
+    }
+  }
+
+  return resultado;
+}
+
+
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
@@ -97,6 +142,25 @@ app.post('/login', (req, res) => {
     } else {
         res.json({ success: false, message: 'Contraseña incorrecta' });
     }
+});
+
+app.get('/api/general_data', (req, res) => {
+  const general = calcularNotasMedias();
+
+  // Guardar también en disco
+  const outputPath = path.join(__dirname, 'general_data.json');
+  fs.writeFileSync(outputPath, JSON.stringify(general, null, 2), 'utf-8');
+
+  res.json(general);
+});
+
+app.get('/api/gepeto_reviews', (req, res) => {
+  const reviewsPath = path.join(DBS_FOLDER, "Gepeto", "Gepeto_reviews.json");
+  if (!fs.existsSync(reviewsPath)) {
+    return res.status(404).json({ error: "No existe el archivo Gepeto_reviews" });
+  }
+  const reviews = JSON.parse(fs.readFileSync(reviewsPath, 'utf-8'));
+  res.json(reviews);
 });
 
 
