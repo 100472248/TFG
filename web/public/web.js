@@ -80,7 +80,6 @@ function LoopIndex(){
 function showTotal(ciudad, nota){
   let variable = "id-" + ciudad;
   let elemento = document.getElementById(variable);
-  console.log(elemento)
 
   if (!nota || typeof nota.total !== "number" || isNaN(nota.total)) {
     elemento.innerHTML = "NOT ENOUGH DATA";

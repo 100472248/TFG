@@ -113,7 +113,7 @@ app.post('/register', (req, res) => {
 
     // Crear points.json
     const pointsPath = path.join(userDir, `${username}_points.json`);
-    fs.writeFileSync(pointsPath, JSON.stringify({ puntos: 0 }, null, 2), 'utf-8');
+    fs.writeFileSync(pointsPath, JSON.stringify({}, null, 2), 'utf-8');
 
     // Crear reviews.json
     const reviewsPath = path.join(userDir, `${username}_reviews.json`);
