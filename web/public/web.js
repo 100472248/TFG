@@ -2,15 +2,18 @@
 const ventanaID = Date.now() + "_" + Math.random().toString(36).slice(2);
 let timeoutVerificacion = null;
 
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.location.pathname.endsWith("/index.html") || window.location.pathname === "/") {
+    LoopIndex();
+  }
+});
+
 
 window.addEventListener('load', () => {
   let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
   abiertas.push(ventanaID);
   localStorage.setItem('pestanas_abiertas', JSON.stringify(abiertas));
   notificarCambio();
-  if (window.location.pathname == "/index.html"){
-    LoopIndex();
-}
 });
 
 window.addEventListener('beforeunload', () => {

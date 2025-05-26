@@ -163,5 +163,21 @@ app.get('/api/gepeto_reviews', (req, res) => {
   res.json(reviews);
 });
 
+app.get('/api/comentarios/:ciudad/:categoria', (req, res) => {
+    const { ciudad, categoria } = req.params;
+    const usuarios = fs.readdirSync(DBS_FOLDER).filter(dir =>
+        fs.lstatSync(path.join(DBS_FOLDER, dir)).isDirectory()
+    );
+    let comentarios = [];
+    for (const usuario of usuarios) {
+        const reviewPath = path.join(DBS_FOLDER, usuario, `${usuario}_reviews.json`);
+        if (!fs.existsSync(reviewPath)) continue;
+        const reviews = JSON.parse(fs.readFileSync(reviewPath, 'utf-8'));
+        if (reviews[ciudad] && reviews[ciudad][categoria] && typeof reviews[ciudad][categoria] === "string") {
+            comentarios.push({ usuario, comentario: reviews[ciudad][categoria] });
+        }
+    }
+    res.json(comentarios);
+});
 
 app.get('/favicon.ico', (req, res) => res.status(204).end());
