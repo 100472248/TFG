@@ -418,7 +418,7 @@
   "Toledo": {
     "Servicios de transporte público": 3.25,
     "Limpieza": 4.25,
-    "Actividades económicas": 3.75,
+    "Actividades económicas": 2,
     "Estilo arquitectónico": 4.25,
     "Importancia histórica": 4.25,
     "Nivel de turismo": 3.5,
@@ -426,7 +426,7 @@
     "Calidad de vida": 4,
     "Medio ambiente": 3.75,
     "Seguridad": 3.75,
-    "total": 3.85
+    "total": 3.67
   },
   "Valencia": {
     "Servicios de transporte público": 3.5,
