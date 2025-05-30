@@ -1,3 +1,10 @@
+.register-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
 form{
     max-width: 500px;
     margin: 3px auto;
