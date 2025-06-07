@@ -160,11 +160,11 @@ seccion.innerHTML = `
       .then(res => res.json())
       .then(data => {
         localStorage.setItem("general_data", JSON.stringify(data));
-        seccion.querySelector("#msg-valoracion").innerHTML = "<span style='color:green'>¡Guardado y medias recalculadas!</span>";
+        seccion.querySelector("#msg-valoracion").innerHTML = "<span style='color:black'>¡Guardado y medias recalculadas!</span>";
       });
   }, 500); // medio segundo
 
-    seccion.querySelector("#msg-valoracion").innerHTML = "<span style='color:green'>¡Guardado y recalculado!</span>";
+    seccion.querySelector("#msg-valoracion").innerHTML = "<span style='color:black'>¡Guardado y recalculado!</span>";
 
     if (nuevosPuntos["total"] !== undefined) {
   let mediaElem = seccion.querySelector("#user-media");

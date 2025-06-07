@@ -1,1 +1,12 @@
-{}
+{
+  "Plasencia": {
+    "Servicios de transporte público": "Más autovías y trenes",
+    "Actividades económicas": "Más empresas",
+    "Seguridad": "Cuidado en San Lázaro"
+  },
+  "Cáceres": {
+    "Servicios de transporte público": "Poned más autovías y trenes",
+    "Nivel educativo": "Muy buena facultad de la UEX",
+    "Seguridad": "No te metas en callejones por la noche"
+  }
+}

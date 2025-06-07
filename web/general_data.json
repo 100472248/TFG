@@ -91,17 +91,17 @@
     "total": 3.75
   },
   "Cáceres": {
-    "Servicios de transporte público": 4,
-    "Limpieza": 4,
+    "Servicios de transporte público": 3.5,
+    "Limpieza": 3.75,
     "Actividades económicas": 3.5,
-    "Estilo arquitectónico": 3.5,
-    "Importancia histórica": 4,
-    "Nivel de turismo": 4,
-    "Nivel educativo": 3.5,
-    "Calidad de vida": 4,
-    "Medio ambiente": 3.5,
-    "Seguridad": 3.5,
-    "total": 3.75
+    "Estilo arquitectónico": 4.25,
+    "Importancia histórica": 4.25,
+    "Nivel de turismo": 4.25,
+    "Nivel educativo": 4,
+    "Calidad de vida": 4.25,
+    "Medio ambiente": 3.75,
+    "Seguridad": 3.75,
+    "total": 3.92
   },
   "Cuenca": {
     "Servicios de transporte público": 3,
@@ -299,17 +299,17 @@
     "total": 3.95
   },
   "Plasencia": {
-    "Servicios de transporte público": 3.5,
-    "Limpieza": 3.5,
+    "Servicios de transporte público": 3,
+    "Limpieza": 3.25,
     "Actividades económicas": 3.5,
-    "Estilo arquitectónico": 3.5,
-    "Importancia histórica": 4,
-    "Nivel de turismo": 4,
-    "Nivel educativo": 3.5,
-    "Calidad de vida": 3.5,
-    "Medio ambiente": 3.5,
-    "Seguridad": 3.5,
-    "total": 3.6
+    "Estilo arquitectónico": 4,
+    "Importancia histórica": 4.25,
+    "Nivel de turismo": 4.25,
+    "Nivel educativo": 3.75,
+    "Calidad de vida": 4,
+    "Medio ambiente": 4.25,
+    "Seguridad": 3.25,
+    "total": 3.75
   },
   "Reus": {
     "Servicios de transporte público": 3.5,
