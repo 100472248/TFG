@@ -82,7 +82,7 @@ const userMediaHTML = (userMedia !== undefined && userMedia !== null)
             <br>
             <label>Review:</label>
             <input type="text" data-categoria="${k}" class="review-input" value="${userReview.replace(/"/g, "&quot;")}" style="width:60%">
-            <button class="ver-comentarios-btn" data-categoria="${k}">💬 Ver comentarios</button>
+            <button type="button" class="ver-comentarios-btn" data-categoria="${k}"> Comentarios </button>
             <div class="comentarios-panel" id="comentarios-${k}" style="display:none; margin-top:8px;"></div>
           </div>
         </li>
@@ -104,7 +104,7 @@ seccion.innerHTML = `
     <h3>Notas medias por categoría</h3>
     <form id="valoracion-form">
       <ul>${bloqueNotas}</ul>
-      <button type="submit">Guardar mis valoraciones</button>
+      <button type="submit">Guardar datos</button>
     </form>
     ${total}
     <div id="msg-valoracion"></div>
