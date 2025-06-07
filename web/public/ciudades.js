@@ -26,6 +26,11 @@ function renderCiudad(nombre, descripcion, nota) {
   const seccion = document.createElement("section");
   const excluir = ["País", "Comunidad autónoma", "Provincia", "Número de habitantes", "total"];
 
+  // 1. NOTA GLOBAL: nota.total es la media general de la ciudad
+  const notaGlobal = (typeof nota.total === "number" && !isNaN(nota.total))
+    ? `<span color:black;">${nota.total.toFixed(2)}</span>`
+    : `<span color:black;">No disponible</span>`;
+
   // Datos clave y descripción larga
   const datosClave = Object.entries(descripcion)
     .filter(([clave]) => excluir.includes(clave))
@@ -35,21 +40,25 @@ function renderCiudad(nombre, descripcion, nota) {
     .filter(([clave]) => !excluir.includes(clave))
     .map(([clave, valor]) => valor).join(" ");
 
+  // Datos actuales de usuario
   const usuario = localStorage.getItem("Online");
   const points = JSON.parse(localStorage.getItem(`${usuario}_points`) || "{}");
   let userCityPoints = points[nombre] || {};
+
+  // Calcular nota media del usuario
   let userMedia = userCityPoints.total;
   if (userMedia === undefined) {
     const categoriasUsuario = Object.entries(userCityPoints)
-    .filter(([k, v]) => typeof v === "number" && !isNaN(v) && k !== "total");
+      .filter(([k, v]) => typeof v === "number" && !isNaN(v) && k !== "total");
     if (categoriasUsuario.length > 0) {
       const suma = categoriasUsuario.reduce((acc, [, v]) => acc + v, 0);
       userMedia = Number((suma / categoriasUsuario.length).toFixed(2));
     }
-}
-const userMediaHTML = (userMedia !== undefined && userMedia !== null)
-  ? `<p id="user-media"><strong>Tu nota media:</strong> ${userMedia.toFixed(2)}</p>`
-  : "";
+  }
+  // AL FINAL: tu nota media si existe
+  const userMediaHTML = (userMedia !== undefined && userMedia !== null)
+    ? `<p id="user-media" style="margin-top:1.5em; font-size:large;"><strong>Tu nota media:</strong> ${userMedia.toFixed(2)}</p>`
+    : "";
 
   // Sistema de calificación y comentarios (editable)
   const reviews = JSON.parse(localStorage.getItem(`${usuario}_reviews`) || "{}");
@@ -82,7 +91,7 @@ const userMediaHTML = (userMedia !== undefined && userMedia !== null)
             <br>
             <label>Review:</label>
             <input type="text" data-categoria="${k}" class="review-input" value="${userReview.replace(/"/g, "&quot;")}" style="width:60%">
-            <button type="button" class="ver-comentarios-btn" data-categoria="${k}"> Comentarios </button>
+            <button type="button" class="ver-comentarios-btn" data-categoria="${k}">Comentarios</button>
             <div class="comentarios-panel" id="comentarios-${k}" style="display:none; margin-top:8px;"></div>
           </div>
         </li>
@@ -90,24 +99,22 @@ const userMediaHTML = (userMedia !== undefined && userMedia !== null)
     })
     .join("");
 
-  const total = (typeof nota.total === "number" && !isNaN(nota.total))
-    ? `<p><strong>Nota total:</strong> ${nota.total.toFixed(2)}</p>`
-    : `<p><strong>Nota total:</strong> No disponible</p>`;
-
-seccion.innerHTML = `
-    <h2>${nombre}</h2>
-    ${userMediaHTML}
-    <h3>Datos clave</h3>
+  seccion.innerHTML = `
+    <h1 style="display:flex;align-items:center;gap:18px;font-size:xx-large;">
+      <span>${nombre}</span>
+      ${notaGlobal}
+    </h1>
+    <h2>Datos clave</h2>
     ${datosClave}
-    <h3>Descripción general</h3>
+    <h2>Descripción general</h2>
     <p>${descripcionLarga}</p>
-    <h3>Notas medias por categoría</h3>
+    <h2>Notas medias por categoría</h2>
     <form id="valoracion-form">
       <ul>${bloqueNotas}</ul>
       <button type="submit">Guardar datos</button>
     </form>
-    ${total}
     <div id="msg-valoracion"></div>
+    ${userMediaHTML}
   `;
 
   // Guardar valoraciones del usuario
@@ -153,28 +160,25 @@ seccion.innerHTML = `
       body: JSON.stringify({ points: allPoints, reviews: allReviews })
     });
 
-    // Actualiza general_data (en local y en backend)
-  // Espera un poco antes de pedir el recálculo de medias
-  setTimeout(() => {
-    fetch("/api/general_data")
-      .then(res => res.json())
-      .then(data => {
-        localStorage.setItem("general_data", JSON.stringify(data));
-        seccion.querySelector("#msg-valoracion").innerHTML = "<span style='color:black'>¡Guardado y medias recalculadas!</span>";
-      });
-  }, 500); // medio segundo
+    // Actualiza general_data
+    setTimeout(() => {
+      fetch("/api/general_data")
+        .then(res => res.json())
+        .then(data => localStorage.setItem("general_data", JSON.stringify(data)));
+    }, 500);
 
     seccion.querySelector("#msg-valoracion").innerHTML = "<span style='color:black'>¡Guardado y recalculado!</span>";
 
+    // Actualiza tu nota media visualmente
     if (nuevosPuntos["total"] !== undefined) {
-  let mediaElem = seccion.querySelector("#user-media");
-  const nuevaHTML = `<p id="user-media"><strong>Tu nota media:</strong> ${nuevosPuntos["total"].toFixed(2)}</p>`;
-  if (mediaElem) {
-    mediaElem.outerHTML = nuevaHTML;
-  } else {
-    seccion.insertAdjacentHTML('afterbegin', nuevaHTML);
-  }
-}
+      let mediaElem = seccion.querySelector("#user-media");
+      const nuevaHTML = `<p id="user-media" style="margin-top:1.5em;"><strong>Tu nota media:</strong> ${nuevosPuntos["total"].toFixed(2)}</p>`;
+      if (mediaElem) {
+        mediaElem.outerHTML = nuevaHTML;
+      } else {
+        seccion.insertAdjacentHTML('beforeend', nuevaHTML);
+      }
+    }
   });
 
   // Listeners para comentarios (como antes)
@@ -193,10 +197,10 @@ seccion.innerHTML = `
             ? comentarios.map(c => `<div class="comentario"><b>${c.usuario}:</b> ${c.comentario}</div>`).join("")
             : `<div class="comentario">No hay comentarios aún para esta categoría.</div>`;
           panel.style.display = "block";
-          btn.textContent = "❌ Ocultar comentarios";
+          btn.textContent = "Ocultar comentarios";
         } else {
           panel.style.display = "none";
-          btn.textContent = "💬 Ver comentarios";
+          btn.textContent = "Ver comentarios";
         }
       });
     });
@@ -204,6 +208,7 @@ seccion.innerHTML = `
 
   return seccion;
 }
+
 
 
 
