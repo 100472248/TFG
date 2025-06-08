@@ -62,7 +62,7 @@ function renderCiudad(nombre, descripcion, nota) {
 
   // Sistema de calificación y comentarios (editable)
   const reviews = JSON.parse(localStorage.getItem(`${usuario}_reviews`) || "{}");
-  let userCityReviews = reviews[nombre] || {};
+  let userCityReviews = reviews || {};
 
   const notasFiltradas = Object.entries(nota)
     .filter(([k, v]) =>
@@ -150,14 +150,16 @@ function renderCiudad(nombre, descripcion, nota) {
     localStorage.setItem(`${usuario}_points`, JSON.stringify(allPoints));
 
     const allReviews = JSON.parse(localStorage.getItem(`${usuario}_reviews`) || "{}");
+    console.log(nuevasReviews);
     allReviews[nombre] = nuevasReviews;
-    localStorage.setItem(`${usuario}_reviews`, JSON.stringify(allReviews));
+    console.log(allReviews[nombre]);
+    localStorage.setItem(`${usuario}_reviews`, JSON.stringify(allReviews[nombre]));
 
     // Enviar al backend
     await fetch(`/save/${usuario}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ points: allPoints, reviews: allReviews })
+      body: JSON.stringify({ points: allPoints, reviews: allReviews[nombre] })
     });
 
     // Actualiza general_data
