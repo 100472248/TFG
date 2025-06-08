@@ -154,32 +154,33 @@ app.get('/api/general_data', (req, res) => {
   res.json(general);
 });
 
-
-app.get('/api/gepeto_reviews', (req, res) => {
-  const reviewsPath = path.join(DBS_FOLDER, "Gepeto", "Gepeto_reviews.json");
-  if (!fs.existsSync(reviewsPath)) {
-    return res.status(404).json({ error: "No existe el archivo Gepeto_reviews" });
-  }
-  const reviews = JSON.parse(fs.readFileSync(reviewsPath, 'utf-8'));
-  res.json(reviews);
-});
-
 app.get('/api/comentarios/:ciudad/:categoria', (req, res) => {
-    const { ciudad, categoria } = req.params;
-    const usuarios = fs.readdirSync(DBS_FOLDER).filter(dir =>
-        fs.lstatSync(path.join(DBS_FOLDER, dir)).isDirectory()
-    );
-    let comentarios = [];
-    for (const usuario of usuarios) {
-        const reviewPath = path.join(DBS_FOLDER, usuario, `${usuario}_reviews.json`);
-        if (!fs.existsSync(reviewPath)) continue;
-        const reviews = JSON.parse(fs.readFileSync(reviewPath, 'utf-8'));
-        if (reviews[ciudad] && reviews[ciudad][categoria] && typeof reviews[ciudad][categoria] === "string") {
-            comentarios.push({ usuario, comentario: reviews[ciudad][categoria] });
-        }
+  const { ciudad, categoria } = req.params;
+  const comentarios = [];
+
+  // Lee todos los usuarios (carpetas en dbs)
+  const usuarios = fs.readdirSync(DBS_FOLDER)
+    .filter(dir => fs.lstatSync(path.join(DBS_FOLDER, dir)).isDirectory());
+
+  for (const usuario of usuarios) {
+    const reviewsPath = path.join(DBS_FOLDER, usuario, `${usuario}_reviews.json`);
+    if (!fs.existsSync(reviewsPath)) continue;
+    try {
+      const reviews = JSON.parse(fs.readFileSync(reviewsPath, 'utf-8'));
+      // Aquí revisa si hay comentarios para esa ciudad y categoría
+      if (reviews[ciudad] && reviews[ciudad][categoria]) {
+        comentarios.push({ usuario, comentario: reviews[ciudad][categoria] });
+      }
+    } catch (e) {
+      // Si el archivo no es válido, ignora ese usuario
+      continue;
     }
-    res.json(comentarios);
+  }
+  res.json(comentarios);
 });
+
+
+
 
 
 app.get('/api/all_users_data', (req, res) => {
@@ -201,5 +202,13 @@ app.get('/api/all_users_data', (req, res) => {
   res.json(result);
 });
 
+app.get('/api/gepeto_reviews', (req, res) => {
+  const reviewsPath = path.join(DBS_FOLDER, "Gepeto", "Gepeto_reviews.json");
+  if (!fs.existsSync(reviewsPath)) {
+    return res.status(404).json({ error: "No existe el archivo Gepeto_reviews" });
+  }
+  const reviews = JSON.parse(fs.readFileSync(reviewsPath, 'utf-8'));
+  res.json(reviews);
+});
 
 app.get('/favicon.ico', (req, res) => res.status(204).end());

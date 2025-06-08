@@ -1,6 +1,8 @@
 {
-  "Servicios de transporte público": "Necesitamos AVE a Almería",
-  "Estilo arquitectónico": "Lo que hay está bien cuidado",
-  "Nivel de turismo": "Muy caro, pero todo muy acogedor",
-  "Medio ambiente": "No hay apenas vida vegetal silvestre"
+  "Lorca": {
+    "Servicios de transporte público": "Necesitamos AVE a Almería",
+    "Limpieza": "Buena empresa de limpieza",
+    "Nivel de turismo": "No hay mucho que ver",
+    "Seguridad": "Pocos crímenes donde residí"
+  }
 }

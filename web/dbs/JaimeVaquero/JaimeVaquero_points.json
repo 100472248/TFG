@@ -37,5 +37,18 @@
     "Medio ambiente": 4,
     "Seguridad": 3.5,
     "total": 4.35
+  },
+  "Lorca": {
+    "Servicios de transporte público": 3.5,
+    "Limpieza": 3,
+    "Actividades económicas": 3,
+    "Estilo arquitectónico": 4,
+    "Importancia histórica": 4,
+    "Nivel de turismo": 2.5,
+    "Nivel educativo": 3,
+    "Calidad de vida": 4,
+    "Medio ambiente": 3.5,
+    "Seguridad": 5,
+    "total": 3.55
   }
 }

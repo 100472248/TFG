@@ -153,13 +153,13 @@ function renderCiudad(nombre, descripcion, nota) {
     console.log(nuevasReviews);
     allReviews[nombre] = nuevasReviews;
     console.log(allReviews[nombre]);
-    localStorage.setItem(`${usuario}_reviews`, JSON.stringify(allReviews[nombre]));
+    localStorage.setItem(`${usuario}_reviews`, JSON.stringify(allReviews));
 
     // Enviar al backend
     await fetch(`/save/${usuario}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ points: allPoints, reviews: allReviews[nombre] })
+      body: JSON.stringify({ points: allPoints, reviews: allReviews })
     });
 
     // Actualiza general_data
@@ -184,30 +184,42 @@ function renderCiudad(nombre, descripcion, nota) {
   });
 
   // Listeners para comentarios (como antes)
-  setTimeout(() => {
-    seccion.querySelectorAll(".ver-comentarios-btn").forEach(btn => {
-      btn.addEventListener("click", async function() {
-        const categoria = btn.getAttribute("data-categoria");
-        const panel = document.getElementById(`comentarios-${categoria}`);
-        if (panel.style.display === "none") {
-          const resp = await fetch(`/api/comentarios/${encodeURIComponent(nombre)}/${encodeURIComponent(categoria)}`);
-          let comentarios = await resp.json();
-          if (comentarios.length > 3) {
-            comentarios = comentarios.sort(() => 0.5 - Math.random()).slice(0, 3);
-          }
-          panel.innerHTML = comentarios.length
-            ? comentarios.map(c => `<div class="comentario"><b>${c.usuario}:</b> ${c.comentario}</div>`).join("")
-            : `<div class="comentario">No hay comentarios aún para esta categoría.</div>`;
-          panel.style.display = "block";
-          btn.textContent = "Ocultar comentarios";
-        } else {
-          panel.style.display = "none";
-          btn.textContent = "Ver comentarios";
-        }
-      });
-    });
-  }, 0);
+setTimeout(() => {
+  seccion.querySelectorAll(".ver-comentarios-btn").forEach(btn => {
+    btn.addEventListener("click", async function() {
+    const categoria = btn.getAttribute("data-categoria");
+    const panel = document.getElementById(`comentarios-${categoria}`);
 
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      btn.textContent = "Comentarios";
+      return;
+    }
+
+    // Trae TODOS los comentarios del backend
+    const resp = await fetch(`/api/comentarios/${encodeURIComponent(nombre)}/${encodeURIComponent(categoria)}`);
+    let comentarios = await resp.json();
+
+    // Selecciona hasta 3 al azar (o menos si hay menos)
+    if (comentarios.length > 3) {
+      comentarios = comentarios.sort(() => 0.5 - Math.random()).slice(0, 3);
+    }
+
+    let comentariosPanel = "";
+    if (comentarios.length) {
+      comentariosPanel = comentarios.map(c =>
+        `<div class="comentario"><b>${c.usuario}:</b> ${c.comentario}</div>`
+      ).join("");
+    } else {
+      comentariosPanel = `<div class="comentario">No hay comentarios aún para esta categoría.</div>`;
+    }
+
+    panel.innerHTML = comentariosPanel;
+    panel.style.display = "block";
+    btn.textContent = "Ocultar comentarios";
+  });
+  });
+}, 0);
   return seccion;
 }
 

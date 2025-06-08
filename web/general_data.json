@@ -1,16 +1,16 @@
 {
   "Lorca": {
-    "Servicios de transporte público": 3.75,
-    "Limpieza": 4,
-    "Actividades económicas": 3.75,
+    "Servicios de transporte público": 3.88,
+    "Limpieza": 3.88,
+    "Actividades económicas": 3.63,
     "Estilo arquitectónico": 4,
     "Importancia histórica": 4.25,
-    "Nivel de turismo": 3.75,
+    "Nivel de turismo": 3.13,
     "Nivel educativo": 4,
-    "Calidad de vida": 4.5,
-    "Medio ambiente": 3.75,
-    "Seguridad": 4,
-    "total": 3.98
+    "Calidad de vida": 4.25,
+    "Medio ambiente": 3.13,
+    "Seguridad": 4.25,
+    "total": 3.84
   },
   "Almería": {
     "Servicios de transporte público": 3.5,
