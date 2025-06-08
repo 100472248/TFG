@@ -181,4 +181,25 @@ app.get('/api/comentarios/:ciudad/:categoria', (req, res) => {
     res.json(comentarios);
 });
 
+
+app.get('/api/all_users_data', (req, res) => {
+  const usuarios = fs.readdirSync(DBS_FOLDER)
+    .filter(dir => fs.lstatSync(path.join(DBS_FOLDER, dir)).isDirectory());
+
+  const result = {};
+
+  for (const usuario of usuarios) {
+    const userDir = path.join(DBS_FOLDER, usuario);
+    try {
+      const points = JSON.parse(fs.readFileSync(path.join(userDir, `${usuario}_points.json`), 'utf-8'));
+      const reviews = JSON.parse(fs.readFileSync(path.join(userDir, `${usuario}_reviews.json`), 'utf-8'));
+      result[usuario] = { points, reviews };
+    } catch (e) {
+      // Ignora usuarios incompletos o error de parseo
+    }
+  }
+  res.json(result);
+});
+
+
 app.get('/favicon.ico', (req, res) => res.status(204).end());

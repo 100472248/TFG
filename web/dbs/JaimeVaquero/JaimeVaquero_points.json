@@ -24,5 +24,18 @@
     "Medio ambiente": 4,
     "Seguridad": 4,
     "total": 4.1
+  },
+  "Salamanca": {
+    "Servicios de transporte público": 3.5,
+    "Limpieza": 4,
+    "Actividades económicas": 5,
+    "Estilo arquitectónico": 5,
+    "Importancia histórica": 4.5,
+    "Nivel de turismo": 4.5,
+    "Nivel educativo": 5,
+    "Calidad de vida": 4.5,
+    "Medio ambiente": 4,
+    "Seguridad": 3.5,
+    "total": 4.35
   }
 }

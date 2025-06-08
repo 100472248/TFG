@@ -7,9 +7,7 @@ from difflib import get_close_matches
 import ast
 
 # === GLOBALES ===
-CIUDADES = [
-    #Introducir ciudades nuevas o que necesitan mejorar su información
-]
+CIUDADES = ["Lorca"]
 
 CIUDADES_NO_USADAS = ["Almería", "Antequera", "Aranjuez", "Barcelona", "Bilbao", "Burgos", "Cartagena", "Cáceres", "Cuenca", "Don Benito", "Getafe", "Gijón", "Granada", 
                       "Leganés", "León", "Logroño", "Las Rozas de Madrid", "Madrid", "Marbella", "Melilla", "Oviedo", "Palma de Mallorca", "Pamplona", "Plasencia", 
@@ -33,9 +31,7 @@ DATOS = [
     "Seguridad y medidas de protección"
 ]
 
-TURISMO = {
-    #Introducir ciudades que necesitan mejorar su información
-}
+TURISMO = { "Lorca": "https://lorcaturismo.es/situacion/situacion.asp?id=53&lang=es" }
 
 TURISMO_NO_USADO = {
     "Almería": "https://www.andalucia.org/lugares-para-visitar/almeria/almeria/",

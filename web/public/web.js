@@ -1,48 +1,34 @@
-
-const ventanaID = Date.now() + "_" + Math.random().toString(36).slice(2);
-let timeoutVerificacion = null;
-
-document.addEventListener("DOMContentLoaded", function() {
-  if (window.location.pathname.endsWith("/index.html") || window.location.pathname === "/") {
+window.addEventListener("DOMContentLoaded", async () => {
+  if (window.location.pathname !== "/web/public/index.html") {
     LoopIndex();
   }
-});
-
-
-window.addEventListener('load', () => {
-  let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
-  abiertas.push(ventanaID);
-  localStorage.setItem('pestanas_abiertas', JSON.stringify(abiertas));
-  notificarCambio();
-});
-
-window.addEventListener('beforeunload', () => {
-  let abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
-  abiertas = abiertas.filter(id => id !== ventanaID);
-  localStorage.setItem('pestanas_abiertas', JSON.stringify(abiertas));
-  notificarCambio();
-});
-
-window.addEventListener('storage', () => {
-  notificarCambio();
-});
-
-function notificarCambio() {
-  const abiertas = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
-  console.log(`🪟 Pestañas detectadas: ${abiertas.length}`);
-
-  if (timeoutVerificacion) clearTimeout(timeoutVerificacion);
-
-  // Esperamos 500 ms antes de confirmar si no queda ninguna
-  timeoutVerificacion = setTimeout(() => {
-    const recheck = JSON.parse(localStorage.getItem('pestanas_abiertas') || '[]');
-    if (recheck.length === 0) {
-      console.log("🔥 ¡Confirmado! Ya no hay ninguna pestaña abierta.");
-      logoutUsuario();
+  // 1. Sincroniza todos los puntos y reviews de todos los usuarios
+  try {
+    const res = await fetch('/api/all_users_data');
+    if (res.ok) {
+      const all = await res.json();
+      for (const usuario in all) {
+        if (all[usuario].points)
+          localStorage.setItem(`${usuario}_points`, JSON.stringify(all[usuario].points));
+        if (all[usuario].reviews)
+          localStorage.setItem(`${usuario}_reviews`, JSON.stringify(all[usuario].reviews));
+      }
     }
-  }, 500); // Puedes ajustar este tiempo según lo sensible que quieras
-}
+  } catch (e) {
+    console.error("❌ Error sincronizando usuarios:", e);
+  }
 
+  // 2. Sincroniza general_data global
+  try {
+    const resGen = await fetch('/api/general_data');
+    if (resGen.ok) {
+      const general = await resGen.json();
+      localStorage.setItem("general_data", JSON.stringify(general));
+    }
+  } catch (e) {
+    console.error("❌ Error sincronizando general_data:", e);
+  }
+});
 
 function openSesion(usuario) {
   localStorage.setItem("Online", usuario);
