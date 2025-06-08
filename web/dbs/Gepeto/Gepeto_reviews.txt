@@ -622,3 +622,65 @@ Puerto Real:
   Medio ambiente: Posee importantes áreas verdes y espacios naturales protegidos, destacando Las Canteras y el Pinar del Río San Pedro.
   Seguridad: Ciudad segura con servicios básicos efectivos por parte de la Policía Local y Guardia Civil.
 
+Lorca:
+  País: España
+---
+España
+---
+España
+---
+España
+  Comunidad autónoma: Región de Murcia
+---
+Región de Murcia
+---
+Murcia
+---
+Región de Murcia
+  Provincia: Murcia
+---
+Murcia
+---
+Lorca
+---
+Murcia
+  Número de habitantes: 87403
+  Servicios de transporte público: Lorca dispone de un servicio de autobuses interurbanos que la unen con ciudades como Murcia, Cartagena y Almería, entre otras.La estación de autobuses fue remodelada en 2010. Además, el transporte urbano está gestionado por Limusa, con 8 líneas. También hay un servicio de taxis y una red creciente de carriles bici.
+---
+Taxis, autobuses interurbanos con servicios a ciudades como Murcia, Cartagena, Almería, Granada, Madrid y Águilas. Transporte urbano gestionado por Limusa con 8 líneas.
+  Limpieza: La limpieza y la gestión de residuos son responsabilidad de Limusa. Se han implementado programas de separación de basuras y reciclaje desde 2018.
+---
+Limpieza municipal realizada por Limusa. Recogida de basuras y centro de reciclaje existentes.
+  Actividades económicas: Agricultura (frutas cítricas), industria, servicios, turismo y actividad cultural.
+---
+Agricultura
+---
+Cultivos hortícolas
+  Estilo arquitectónico: Influencia árabe y morisca. Notables monumentos incluyen la Alcazaba, la Catedral de San Nicolás y la Capilla del Convento de Santa Clara.
+---
+Aldeas y pueblos con estilo tradicional
+  Importancia histórica: Lorca ha sido una ciudad importante en el sureste de España por su ubicación estratégica. Tiene una rica historia cultural y es conocida por sus tradiciones, como los festejos del Patrón San Nicolás en enero.
+---
+Ciudad medieval en la provincia de Murcia. Fue una importante presencia durante la época nazarí.
+---
+ubicación estratégica en la frontera entre Murcia y Andalucía
+  Nivel de turismo: Ciudad turística destacada con atractivos como su casco histórico, la Alcazaba, la catedral,遗址 arqueológicos, museos y parques naturales. También se nota un creciente interés por el turismo cultural.
+---
+Lugar con playas y riqueza cultural, pero no se mencionan sitios específicos.
+---
+Parajes naturales como el Lomo de Bas
+  Nivel educativo: La Universidad de Murcia tiene un campus en Lorca, lo que contribuye a su perfil educativo.
+  Calidad de vida: Buena calidad de vida debido a sus servicios, proximidad a áreas naturales (sierra de Carrueta y Mar Menor), instalaciones deportivas y actividades culturales. También se destaca su sistema de transporte público eficiente.
+---
+Baja contaminación
+---
+Clima mediterráneo con 18º C media anual
+  Medio ambiente: Iniciativas para fomentar el uso de bicicletas y programas de separación de residuos desde 2018. Sin embargo, hay desafíos ambientales relacionados con la movilidad y algunos puntos de contaminación.
+---
+Áreas protegidas como Lomo de Bas
+---
+Presencia de zonas verdes y parques. Se menciona preocupación por contaminación acústica y luminosa.
+---
+Zonas verdes como el Lomo de Bas
+  Seguridad: El texto no especifica detalles sobre seguridad específicos, pero menciona mejoras en infraestructura.
+

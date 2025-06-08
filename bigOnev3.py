@@ -153,6 +153,7 @@ def obtener_texto_turismo(ciudad):
         return ""
 
     try:
+        print(f"Descargando información externa para {ciudad}...")
         response = requests.get(TURISMO[ciudad])
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
@@ -256,7 +257,6 @@ def check_type(datos):
         stop = False
         for clave in claves:
             if categoria.lower() in clave.lower():
-                print(categoria, clave)
                 datos_estandarizados[categoria] = datos[clave]
                 stop = True
                 break
@@ -285,7 +285,6 @@ def recolectar_datos_wikipedia(tabla):
             try:
                 datos_ciudad = ast.literal_eval(limpia)
             except Exception:
-                print("⚠️ Fallback a extracción aproximada")
                 json_aprox = re.findall(r'"([^"]+)"\s*:\s*(.*?)(,|\n|$)', limpia)
                 for clave, valor, _ in json_aprox:
                     match = get_close_matches(clave.strip(), DATOS, n=1, cutoff=0.4)
@@ -308,7 +307,7 @@ def recolectar_datos_reforzados():
     tabla = recolectar_datos_wikipedia(tabla)  # Primero obtenemos los datos de Wikipedia
 
     for ciudad in CIUDADES:
-        print(f"Reforzando datos para {ciudad} con información de Turismo...")
+        print(f"Reforzando datos para {ciudad} con información externa...")
         texto_turismo = obtener_texto_turismo(ciudad)
         prompt = generar_prompt_otras_fuentes(ciudad, texto_turismo, DATOS)
         respuesta = ask_deepseek(prompt)
@@ -320,7 +319,6 @@ def recolectar_datos_reforzados():
             try:
                 datos_ciudad = ast.literal_eval(limpia)
             except Exception:
-                print("⚠️ Fallback a extracción aproximada")
                 json_aprox = re.findall(r'"([^"]+)"\s*:\s*(.*?)(,|\n|$)', limpia)
                 for clave, valor, _ in json_aprox:
                     match = get_close_matches(clave.strip(), DATOS, n=1, cutoff=0.4)
