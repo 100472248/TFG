@@ -7,13 +7,16 @@ from difflib import get_close_matches
 import ast
 
 # === GLOBALES ===
+# Ciudades a procesar
 CIUDADES = ["Lorca"]
 
+# Almacén de ciudades en la web. Las de aquí no se usan en la ejecución
 CIUDADES_NO_USADAS = ["Almería", "Antequera", "Aranjuez", "Barcelona", "Bilbao", "Burgos", "Cartagena", "Cáceres", "Cuenca", "Don Benito", "Getafe", "Gijón", "Granada", 
                       "Leganés", "León", "Logroño", "Las Rozas de Madrid", "Madrid", "Marbella", "Melilla", "Oviedo", "Palma de Mallorca", "Pamplona", "Plasencia", 
                       "Puerto Real", "Reus", "Salamanca", "Santa Cruz de Tenerife", "Santander", "Sevilla", "Soria", "Talavera de la Reina", "Tomelloso", "Toledo", 
                       "Valencia", "Vigo", "Vitoria", "Zamora", "Zaragoza"]
 
+#Características para Deepseek
 DATOS = [
     "País",
     "Comunidad autónoma",
@@ -31,8 +34,10 @@ DATOS = [
     "Seguridad y medidas de protección"
 ]
 
+# Fuentes externas de información turística a ejecutar (una por ciudad)
 TURISMO = { "Lorca": "https://lorcaturismo.es/situacion/situacion.asp?id=53&lang=es" }
 
+# Almacén de fuentes extrenas (una por ciuda). Las de aquí no se procesan
 TURISMO_NO_USADO = {
     "Almería": "https://www.andalucia.org/lugares-para-visitar/almeria/almeria/",
     "Antequera": "https://www.legadoandalusi.es/revista/antequera/",
@@ -74,14 +79,17 @@ TURISMO_NO_USADO = {
     "Zamora": "https://queverenelmundo.com/que-ver-en-espana/provincia-de-zamora/guia-de-zamora/",
     "Zaragoza": "https://queverenelmundo.com/que-ver-en-espana/provincia-de-zaragoza/guia-de-zaragoza/"}
 
+# Categorías como se presentan en el JSON y en la Web
 CATEGORIAS = ["País", "Comunidad autónoma", "Provincia", "Número de habitantes", "Servicios de transporte público", "Limpieza", 
               "Actividades económicas", "Estilo arquitectónico", "Importancia histórica", "Nivel de turismo", "Nivel educativo", 
               "Calidad de vida", "Medio ambiente", "Seguridad"]
 
+#Intento de localizar categorías sin datos
 FALLOS  = ["No se proporciona", "No se especifica en el texto", "No se especifica en el texto proporcionado.", 
                          "", "No se especifican detalles en el texto proporcionado", "No disponible", 
                          "No se proporcionan detalles específicos en el texto.", "No especificado en el texto proporcionado", "Desconocido"]
 
+# URLs y rutas de archivos
 WIKIPEDIA = "https://es.wikipedia.org/wiki/"
 WIKIS_DIR = "./wikis/"
 TXT_OUTPUT_PATH = "./web/dbs/Gepeto/Gepeto_reviews.txt"
@@ -96,6 +104,7 @@ TURISMO_DIR = "./fuentes_turismo/"
 os.makedirs(TURISMO_DIR, exist_ok=True)
 os.makedirs(WIKIS_DIR, exist_ok=True)
 
+#Cargar JSON existente si existe
 def cargar_json_existente():
     if os.path.exists(JSON_OUTPUT_PATH):
         with open(JSON_OUTPUT_PATH, "r", encoding="utf-8") as f:
