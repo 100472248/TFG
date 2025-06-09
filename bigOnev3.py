@@ -43,6 +43,7 @@ TURISMO_NO_USADO = {
     "Cartagena": "https://queverenelmundo.com/que-ver-en-espana/region-de-murcia/guia-de-cartagena/",
     "Cáceres": "https://queverenelmundo.com/que-ver-en-espana/provincia-de-caceres/guia-de-caceres/",
     "Cuenca": "https://queverenelmundo.com/que-ver-en-espana/provincia-de-cuenca/guia-de-cuenca/",
+    "Don Benito": "https://www.dip-badajoz.es/municipios/municipio_dinamico/historia/index_historia.php?codigo=042",
     "Getafe": "https://www.verpueblos.com/comunidad+de+madrid/madrid/getafe/",
     "Gijón": "https://asturias.com/gijon-informacion-basica/?srsltid=AfmBOop1PZq3yY5IzJe6jCze_qIpwRPmAhBQj4gsOAExVCB1Hn_MBQIi",
     "Granada": "https://www.andalucia.org/lugares-para-visitar/granada/granada/",
